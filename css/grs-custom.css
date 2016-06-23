@@ -9,3 +9,7 @@ input.contratos-checkbox {
 .info-error {
   font-size: 1.7em;
 }
+
+.no-padding {
+  padding: 0 !important;
+}
