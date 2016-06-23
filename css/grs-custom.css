@@ -1,3 +1,11 @@
 input.contratos-checkbox {
   height: 14px;
 }
+
+.file-error {
+  display: none;
+}
+
+.info-error {
+  font-size: 1.7em;
+}
