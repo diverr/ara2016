@@ -13,3 +13,24 @@ input.contratos-checkbox {
 .no-padding {
   padding: 0 !important;
 }
+
+.icon-folder:before {
+  content: '\e800'; }
+
+.icon-upload:before {
+    content: '\e804'; }
+
+
+div.seleccionado {
+  background: #dad9d9;
+  text-align: center;
+  padding: 15px;
+}
+
+div.seleccionado h3 {
+  margin: 0;
+  padding: 0;
+  font-family: "Oblik";
+  font-weight: 300;
+  color: #234473;
+}
