@@ -459,7 +459,17 @@
                         <input type="text" value="" placeholder="Importe máximo" name="max-amount" validation-amount-greater-than="min-amount">
                       </div>
                       <div class="col-md-3">
-                        <input type="text" value="" placeholder="Contrato" name="contrato" >
+                        <div class="select-simple select-date-range">
+                          <select name="date-range">
+                            <option value="">Tipo de archivo</option>
+                            <option value="0">Nóminas ABA-08</option>
+                            <option value="1">Efectos ABA-01</option>
+                            <option value="2">Recibos ABA-09</option>
+                            <option value="3">Parquímetros ABA-25</option>
+                            <option value="4">Transferencias ABA-02</option>
+                            <option value="5">Pagos confirming</option>
+                          </select>
+                        </div>
                       </div>
                       <div class="col-md-3">
                         <input type="text" value="" placeholder="Descripción" name="descripcion" >
@@ -491,18 +501,7 @@
                     </div>
 
                     <div class="row">
-                      <div class="col-md-4">
-                        <div class="select-simple">
-                          <select name="select-filter-order-by">
-                            <option value="">Ordenar por</option>
-                            <option value="Fecha de operación">Fecha de operación</option>
-                            <option value="Contrato">Contrato</option>
-                            <option value="Cantidad total">Cantidad total</option>
-                            <option value="Canal">Canal</option>
-                            <option value="Estado">Estado</option>
-                          </select>
-                        </div>
-                      </div>
+
                       <div class="col-md-offset-4 col-md-4">
                         <input type="submit" id="submit-advanced-search" class="btn-action" value="Buscar" data-placeholder-results="Resultados para la Búsqueda Avanzada">
                       </div>
@@ -566,6 +565,7 @@
                 </div>
 
               </div>
+            
             </div>
 
           </div>
