@@ -367,128 +367,34 @@
         <div class="container">
 
           <ol class="list-steps">
-            <li><a class="selected bar-selected">Inicio</a></li>
-            <li><a class="selected bar-selected">¿Correcto?</a></li>
-            <li><a>¡Hecho!</a></li>
+
+            <li><a class="selected bar-selected">
+
+					Inicio
+
+			</a></li>
+
+
+            <li><a>
+
+							¿Correcto?
+
+					</a></li>
+            <li><a>
+
+							¡Hecho!
+
+					</a></li>
+
+
           </ol>
         </div>
       </div>
 
-      <div class="seccion seccion-colored">
-        <div class="container">
-          <div class="row">
-
-
-            <div class="col-md-offset-1 col-md-4 col-sm-6">
-
-              <div class="operation-summary-info">
-
-                <div class="info-title">Datos de envío</div>
-
-                <div class="info-account">
-                  <div class="account">
-                    <div class="account-alias">Operación:</div>
-                  </div>
-                  <div class="account-amount grey-text">Envío fichero ABA-09</div>
-                </div>
-
-                <div class="info-account">
-                  <div class="account">
-                    <div class="account-alias">Importe:</div>
-                  </div>
-                  <div class="account-amount grey-text">1.563,00 <span>EUR</span></div>
-                </div>
-
-                <div class="info-account">
-                  <div class="account">
-                    <div class="account-alias">Solicitante:</div>
-                  </div>
-                  <div class="account-amount grey-text">RAMÓN FUSTER SANZ</div>
-                </div>
-
-                <div class="info-account">
-                  <div class="account">
-                    <div class="account-alias">Contrato relacionado:</div>
-                  </div>
-                  <div class="account-amount grey-text">399008001</div>
-                </div>
-              </div>
-
-            </div>
-
-
-            <div class="col-md-offset-2 col-md-4 col-sm-6">
-
-              <div class="operation-summary-info">
-                <div class="info-title">Estado envío</div>
-
-                <div class="info-value">
-                  <strong>Fichero pendiente de asignar cuenta</strong>
-                </div>
-              </div>
-
-            </div>
-
-
-            <div class="col-md-offset-1 col-md-10 col-sm-12">
-
-              <div class="operation-summary-info with-border-top without-border-bottom row">
-                <div class="info-value col-md-4">
-                  Comisiones: <span class="amount-currency">0,00 <span>EUR</span></span>
-                </div>
-                <div class="info-value col-md-4 align-center">
-                  IGI: <span class="amount-currency">0,00 <span>EUR</span></span>
-                </div>
-              </div>
-
-            </div>
-
-
-          </div>
-        </div>
-      </div>
 
 
 
 
-      <div class="seccion">
-        <form action="grs-envioficheros-firma.html" method="post" class="form-funnel">
-          <div class="container operation-success-container">
-            <div class="row">
-              <div class="col-md-offset-3 col-md-6">
-
-                <div class="success-header">
-                  <p class="success-title">El envío se ha realizado con éxito.</p>
-                  <p class="success-details">El fichero ha quedado pendiente de <strong>asignar cuenta.</strong></p>
-                </div>
-
-                <h2 class="section-title form-block-title">¿A qué cuenta la asignas?</h2>
-
-
-                <div class="form-funnel-row">
-                  <div class="select-account">
-                    <select name="account-select" data-label="Elige una cuenta" tabindex="1" required="" aria-required="true">
-                      <option data-alias="Cuenta 1" data-amount="" data-currency="" value="Cuenta 1">Cuenta 1</option>
-                      <option data-alias="Cuenta 2" data-amount="" data-currency="" value="Cuenta 2">Cuenta 2</option>
-                    </select>
-                  </div>
-                </div>
-
-
-
-              </div>
-            </div>
-          </div>
-
-          <div class="container">
-            <div class="row">
-              <div class="col-md-offset-4 col-md-4">
-                <input type="submit" class="btn-action" value="Continuar">
-              </div>
-            </div>
-          </div>
-        </form>
-      </div>
 
 
 
@@ -522,7 +428,7 @@
 
                 <div class="element-list-row">
                   <div class="element-list-summary-container">
-                    <div class="element-list-cell width-col-1 text-align-center"><i class="icon-info info-error"></i></div>
+                    <div class="element-list-cell width-col-1 text-align-center" style="color: red;"><i class="icon-info info-error"></i></div>
                     <div class="element-list-cell align-middle text-align-left grey width-col-3">
                       <span class="element-list-mobile-label visible-xs">Tipo</span> Error
                     </div>
@@ -551,7 +457,7 @@
             <div class="col-md-offset-2 col-md-8">
               <div class="row">
                 <div class="col-md-offset-4 col-md-4">
-                  <a href="home.html" class="btn-action">Volver</a>
+                  <a href="grs-envioficheros-seleccion-fichero.html" class="btn-action">Volver</a>
                 </div>
               </div>
             </div>
@@ -702,24 +608,7 @@
     });
   </script>
 
-  <script>
-    function selectFile() {
-      $("#input-file").click();
-    }
 
-    function fileSelected() {
-      var temp = $("#input-file").val().split("\\");
-      var file = temp.pop();
-      if (file != null && file != '') {
-        $("#choose-file").val(file);
-      }
-    }
-
-    function enviar() {
-      $("#btn-enviar").hide();
-      $(".file-error").show();
-    }
-  </script>
 </body>
 
 </html>
