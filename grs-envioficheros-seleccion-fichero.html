@@ -406,12 +406,15 @@
                   <div class="select-single">
                     <select name="transfer-selector" data-label="Elige el tipo de fichero a enviar" tabindex="3" required>
                       <option value=""></option>
+
+
+                      <option value="2">Recibos ABA-09</option>
+                      <option value="4">Transferencias ABA-02</option>
                       <option value="0">Nóminas ABA-08</option>
                       <option value="1">Efectos ABA-01</option>
-                      <option value="2">Recibos ABA-09</option>
-                      <option value="3">Parquímetros ABA-25</option>
-                      <option value="4">Transferencias ABA-02</option>
                       <option value="5">Pagos confirming</option>
+                      <option value="3">Parquímetros ABA-25</option>
+
                     </select>
                   </div>
                 </div>
@@ -427,7 +430,7 @@
                 </div>
 
                 <div class="form-funnel-row">
-                  <textarea id="date-reason" name="date-reason" placeholder="Descripción" maxlength="140" required="" aria-required="true"></textarea>
+                  <input type="text" id="date-reason" name="date-reason" placeholder="Descripción" maxlength="140" required="" aria-required="true" />
                 </div>
 
               </div>
