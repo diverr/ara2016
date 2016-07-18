@@ -53,3 +53,11 @@ div.icon-contratos {
   margin-top: 250px;
   cursor: pointer;
 }
+
+.iban {    
+	text-align: center;
+    color: #398CBF;
+    font-size: 16px;}
+.separar {margin-top:50px;}	
+.separar1 {margin-top:20px;}
+.scroll-vertical {overflow-y: scroll;max-height: 553px;}

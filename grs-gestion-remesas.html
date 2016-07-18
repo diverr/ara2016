@@ -3,9 +3,8 @@
 
 <head>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/grs-custom.css">
 
-  <title>MoraBanc - Alta recibo</title>
+  <title>MoraBanc - Gestión Remesas</title>
   <meta charset="utf-8">
 
   <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
@@ -337,6 +336,17 @@
 
 
   <div id="sb-site" class="wrapper-page-content visibility-hidden  style='margin-bottom: 50px;'">
+    <div class="main-content" id="account-details-view">
+
+
+
+
+
+
+
+
+
+     <div id="sb-site" class="wrapper-page-content visibility-hidden  style='margin-bottom: 50px;'">
     <div class="main-content" id="transfer-operation">
 
 
@@ -354,7 +364,7 @@
 
 
 
-          <h1 class="tit-operation ellipsis">Alta Recibo</h1>
+          <h1 class="tit-operation ellipsis">Gestión remesas</h1>
 
           <h3 class="tit-operation-detail ellipsis">Recibos ABA-09</h3>
 
@@ -369,110 +379,117 @@
 
       </div>
 
-
-
-
-
-
-      <section class="seccion">
+      <section class="section-tabs">
         <div class="container">
-          <form action="" method="post" class="form-funnel" id="loginForm">
-
-            <div class="row">
-              <div class="col-md-offset-3 col-md-6">
-                <div class="title-with-info">
-                  <h2 class="section-title form-block-title">Datos cliente</h2>
-                </div>
-
-
-                 <div class="form-funnel-row">
-      						<input type="text" placeholder="Referencia cliente" name="answer-1" id="answer-1" tabindex="3" required="" aria-required="true">
-      					</div>
-
-                <div class="form-funnel-row">
-      						<input type="text" placeholder="IBAN" name="answer-1" id="answer-1" tabindex="3" required="" aria-required="true">
-      					</div>
-
-                <h3 class="iban">No conozco el IBAN</h3>
-                
-                <div class="form-funnel-row">
-      						<input type="text" placeholder="Nombre" name="answer-1" id="answer-1" tabindex="3" required="" aria-required="true">
-      					</div>
-                        
-                <div class="form-funnel-row">
-      						<input type="text" placeholder="Nombre del titular (opcional)" name="answer-1" id="answer-1" tabindex="3" required="" aria-required="false">
-      					</div>
-                        
-                 <div class="form-funnel-row">
-      						<input type="text" placeholder="Domicilio (opcional)" name="answer-1" id="answer-1" tabindex="3" required="" aria-required="false">
-      					</div> 
-                 
-                  <div class="form-funnel-row">
-      						<input type="text" placeholder="Localidad (opcional)" name="answer-1" id="answer-1" tabindex="3" required="" aria-required="false">
-      					</div>     
-                                           
-				 <div class="form-funnel-row">
-      						<input type="text" placeholder="Código postal (opcional)" name="answer-1" id="answer-1" tabindex="3" required="" aria-required="false">
-      					</div> 
-                        
-              
-
-                <div class="form-funnel-row">
-      						<div class="select-account">
-      							<select name="origin-account" data-label="País beneficiario" tabindex="2" required="" aria-required="true">
-      								<option data-alias="Andorra" data-amount="" data-currency="" value="Andorra">Andorra</option>
-      								<option data-alias="España" data-amount="" data-currency="" value="España">España</option>
-      							</select>
-      						<div class="select-container"><div class="select-content"><div class="account"><div class="label">Elige una cuenta</div><div class="account-alias">Cuenta Hogar</div></div><div class="amounts"><div class="amount"><span>5.234,90</span> <span class="currency">EUR</span></div></div></div><div class="select-dropdown"><i class="icon-down-open-big"></i></div></div><div class="select-options-container hide"><div class="select-options-wrapper mCustomScrollbar _mCS_1 mCS_no_scrollbar"><div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 0px;" tabindex="0"><div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position: relative; left: 0px; top: 0px;" dir="ltr"><div class="select-option-row" data-option-index="0"><div class="select-option-alias">Cuenta Hogar</div><div class="select-option-amount">5.234,90 <span class="currency">EUR</span></div></div><div class="select-option-row" data-option-index="1"><div class="select-option-alias">Cuenta Ahorro</div><div class="select-option-amount">15.124,24 <span class="currency">EUR</span></div></div></div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div></div></div>
-      					</div>
-                        
-                         <div class="form-funnel-row">
-      						<div class="select-account">
-      							<select name="origin-account" data-label="Nombre del grupo (opcional)" tabindex="2" required="" aria-required="false">
-      								<option data-alias="" data-amount="" data-currency="" value="Grupo1">Grupo1</option>
-      								<option data-alias="" data-amount="" data-currency="" value="Grupo2">Grupo2</option>
-      							</select>
-      						<div class="select-container"><div class="select-content"><div class="account"><div class="label">Elige una cuenta</div><div class="account-alias">Cuenta Hogar</div></div><div class="amounts"><div class="amount"><span>5.234,90</span> <span class="currency">EUR</span></div></div></div><div class="select-dropdown"><i class="icon-down-open-big"></i></div></div><div class="select-options-container hide"><div class="select-options-wrapper mCustomScrollbar _mCS_1 mCS_no_scrollbar"><div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 0px;" tabindex="0"><div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position: relative; left: 0px; top: 0px;" dir="ltr"><div class="select-option-row" data-option-index="0"><div class="select-option-alias">Cuenta Hogar</div><div class="select-option-amount">5.234,90 <span class="currency">EUR</span></div></div><div class="select-option-row" data-option-index="1"><div class="select-option-alias">Cuenta Ahorro</div><div class="select-option-amount">15.124,24 <span class="currency">EUR</span></div></div></div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div></div></div>
-      					</div>
-
-               
-
-
-                <h2 class="section-title">Datos recibo</h2>
-
-
-                <div class="form-funnel-row">
-      						<div class="input-amount input-fixed-currency">
-      							<input type="text" name="amount-input" placeholder="Importe en euros" min="25.00" tabindex="3" required="" aria-required="true">
-      							<div class="input-mask">
-      								<span class="currency">EUR</span>
-      								<img class="flag" src="images/flags/EUR.png">
-      							</div>
-      						</div>
-      					</div>
-                        
-                         <div class="form-funnel-row">
-      						<input type="text" placeholder="Concepto" name="answer-1" id="answer-1" tabindex="3" required="" aria-required="false">
-      					</div>
-               
-
-
-
-
-            <div class="row">
-              <div class="col-lg-offset-4 col-lg-4 col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6">
-                <input type="submit" class="btn-action" value="Continuar">
-              </div>
-            </div>
-          </form>
+          <ul class="menu-tabs">
+            <li class="active"><a href="#movimientos"><span>Listado recibos</span></a></li>
+            <li><a href="#operaciones"><span>Operaciones</span></a></li>
+            <li><a href="#consultas"><span>Consultas</span></a></li>
+          </ul>
         </div>
       </section>
 
+      <section class="seccion seccion-detalle-cuentas no-padding-bottom">
+        <div class="tab-swiper-container swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" data-hash="movimientos">
+              <div class="panel-cuentas seccion container" data-anchor="movimientos">
+                <div class="container">
+                  
+                     
+                  </div>
+                </div>
+                
+            </div>
+            <div class="swiper-slide" data-hash="operaciones">
+              <div class="panel-cuentas section" data-anchor="operaciones">
+
+
+                <div class="seccion">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-10 col-md-offset-1">
+                        <div class="operations-list-buttons swiper-no-swiping">
+                          <div class="row related-operations-buttons">
+
+                            <div class="col-md-6 button-container">
+                              <a href="grs-alta-recibo.html" class="btn-outline operation-button">Alta recibo</a>
+                            </div>
+
+                            <div class="col-md-6 button-container">
+                              <a href="solicitar-talonario-formulario.html" class="btn-outline operation-button">Alta cliente</a>
+                            </div>
+
+                            <div class="col-md-6 button-container">
+                              <a href="cambio-divisa-formulario.html" class="btn-outline operation-button">Importar fichero</a>
+                            </div>
+
+                            <div class="col-md-6 button-container">
+                              <a href="solicitar-divisa-formulario.html" class="btn-outline operation-button">Gestionar grupos</a>
+                            </div>
+
+                            <div class="col-md-6 button-container">
+                              <a href="#" class="btn-outline operation-button">Traspaso de clientes</a>
+                            </div>
+
+                            <div class="col-md-6 button-container">
+                              <a href="#" class="btn-outline operation-button">Devoluciones</a>
+                            </div>
+
+                            
+                          </div>
+
+                         
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
 
 
 
+                
+              </div>
+            </div>
+            <div class="swiper-slide" data-hash="consultas">
+              <div class="panel-cuentas section" data-anchor="consultas">
 
+
+                <div class="seccion">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-10 col-md-offset-1">
+                        <div class="operations-list-buttons swiper-no-swiping">
+                          <div class="row related-operations-buttons">
+
+                            <div class="col-md-6 button-container">
+                              <a href="#" class="btn-outline operation-button">Historíco</a>
+                            </div>
+
+                            <div class="col-md-6 button-container">
+                              <a href="#" class="btn-outline operation-button">Listado clientes</a>
+                            </div>
+
+                            
+
+                          </div>
+                         
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </div>
 
@@ -593,6 +610,16 @@
 
 
 
+  <script src="js/vendor/swiper/swiper.jquery.min.js"></script>
+
+
+
+
+  <script src="js/vendor/graphics/d3.min.js"></script>
+  <script src="js/vendor/graphics/c3.min.js"></script>
+
+
+
 
 
 
@@ -605,25 +632,50 @@
   <script type="text/javascript">
     $(document).ready(function() {
       FrontMainController.init();
+
+      AccountGraphic.drawGraphic([
+        ["Meses", "ENE", "FEB", "MAR", "ABR", "MAY", "JUN", "JUL", "AGO", "SEP", "OCT", "NOV", "DIC"],
+        ["Saldo", 55000.15, 60879.67, 65500.34, 56500.34, 5165.64, 2505, 7000.28, 9000.56, -32000.5, -5670.34, 7100.65, 31000.12],
+        ["Fecha", "31/01/2015", "28/02/2015", "31/03/2015", "30/04/2015", "31/05/2015", "30/06/2015", "31/07/2015", "31/08/2015", "30/09/2015", "31/10/2015", "30/11/2015", "31/12/2015"]
+      ], 'EUR');
+      SavingsGraphic.drawGraphic([
+        ["Meses", "ENE", "FEB", "MAR", "ABR", "MAY", "JUN", "JUL", "AGO", "SEP", "OCT", "NOV", "DIC"],
+        ["Saldo", 18600, 22469.34, 15000, 11200, 4990.56, 2345.45, 4050.56, 1005.31, 5000, 7505.3, 8900.24, 17230.32],
+        ["Fecha", "31/01/2015", "28/02/2015", "31/03/2015", "30/04/2015", "31/05/2015", "30/06/2015", "31/07/2015", "31/08/2015", "30/09/2015", "31/10/2015", "30/11/2015", "31/12/2015"]
+      ], 'EUR');
+      InvestmentsGraphic.drawGraphic([
+        ["Meses", "ENE", "FEB", "MAR", "ABR", "MAY", "JUN", "JUL", "AGO", "SEP", "OCT", "NOV", "DIC"],
+        ["Saldo", 20530, 16775.76, 19450.34, 23500, 27740.45, 27806.45, 25860.43, 20950.45, 22550.24, 28608.32, 32580, 35560.04],
+        ["Fecha", "31/01/2015", "28/02/2015", "31/03/2015", "30/04/2015", "31/05/2015", "30/06/2015", "31/07/2015", "31/08/2015", "30/09/2015", "31/10/2015", "30/11/2015", "31/12/2015"]
+      ], 'EUR');
+      FinancesGraphic.drawGraphic([
+        ["Hipoteca", -32879.67, [
+          ["Pagado", 420879],
+          ["Pendiente", 135767]
+        ]],
+        ["Préstamo personal", -8745.67, [
+          ["Pagado", 20500],
+          ["Pendiente", 10700]
+        ]],
+        ["Tarjetas de crédito", -4687.67, [
+          ["Pagado", 1000],
+          ["Pendiente", 357]
+        ]]
+      ], 'EUR');
+      InvestmentByTypeGraphic.drawGraphic([
+        ["Fondos de inversión", 615044.11],
+        ["Acciones", 565495.35],
+        ["Renta Fija", 153047.04]
+      ], 'EUR');
+      InvestmentByCurrencyGraphic.drawGraphic([
+        ["Euro - EUR", 992652.38],
+        ["Dólar - USD", 330884.14]
+      ], 'EUR');
+
+
+
+
     });
-  </script>
-
-  <script>
-    function selectFile() {
-      $("#input-file").click();
-    }
-
-    function fileSelected() {
-      var temp = $("#input-file").val().split("\\");
-      var file = temp.pop();
-      if (file != null && file != '') {
-        $("#choose-file").val(file);
-      }
-    }
-
-    function enviar() {
-      //$("#btn-enviar").hide();
-    }
   </script>
 </body>
 
