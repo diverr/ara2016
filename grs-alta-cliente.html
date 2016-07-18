@@ -376,7 +376,7 @@
 
       <section class="seccion">
         <div class="container">
-          <form action="" method="post" class="form-funnel" id="altaForm">
+          <form action="grs-alta-clientes-exito.html" method="post" class="form-funnel" id="altaForm">
 
             <div class="row">
               <div class="col-md-offset-3 col-md-6">
@@ -386,21 +386,34 @@
 
 
                 <div class="form-funnel-row">
+                
       						<input type="text" placeholder="Referencia cliente" name="answer-1" id="answer-1" tabindex="3" required="" aria-required="true">
+                            <i class="icon-info popup-trigger informame"></i>
+                            
       					</div>
 
                 <div class="form-funnel-row">
-      						<input type="text" placeholder="IBAN" name="answer-1" id="answer-1" tabindex="3" required="" aria-required="true">
+      						<input type="text" placeholder="IBAN" name="answer-2" id="answer-2" tabindex="3" required="yes" aria-required="true">
+                                                        <i class="icon-info popup-trigger informame"></i>
+
       					</div>
 
-                <h3 class="iban">No conozco el IBAN</h3>
+                <h3 class="iban popup-container popup-trigger">No conozco el IBAN</h3>
+                <div class="popup-info list-accounts-popup closeable-container hide">
+									<div class="popup-wrapper">
+										<i class="icon-close"></i>
+										<p>....</p>
+									</div>
+								</div>
                 
                 <div class="form-funnel-row">
-      						<input type="text" placeholder="Nombre" name="answer-1" id="answer-1" tabindex="3" required="" aria-required="true">
+      						<input type="text" placeholder="Nombre" name="answer-3" id="answer-3" tabindex="3" required="" aria-required="true">
       					</div>
                         
                 <div class="form-funnel-row">
       						<input type="text" placeholder="Nombre del titular (opcional)" name="answer-1" id="answer-1" tabindex="3" required="" aria-required="false">
+                                                        <i class="icon-info popup-trigger informame"></i>
+
       					</div>
                         
                  <div class="form-funnel-row">
@@ -446,7 +459,7 @@
 
             <div class="row">
               <div class="col-lg-offset-4 col-lg-4 col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6">
-                <input type="submit" class="btn-action" value="Continuar">
+                <input type="submit" class="btn-action"  value="Continuar">
               </div>
             </div>
           </form>

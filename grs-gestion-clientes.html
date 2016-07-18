@@ -352,14 +352,13 @@
         <div class="container ">
 
 
-
+<a class="operation-title-button back-button" href="#"><i class="icon-left-arrow"></i></a>
 
           <h1 class="tit-operation ellipsis">Gestión clientes</h1>
 
           <h3 class="tit-operation-detail ellipsis">Recibos ABA-09</h3>
 
 
-          <a class="operation-title-button close-button" href="#"><i class="icon-close"></i></a>
 
 
 
@@ -445,16 +444,16 @@
                 <div class="form-container advanced-form hide">
                   <form action="#" method="post" id="advanced-search-form">
                     <div class="row">
-                      <div class="col-md-3 input-with-amount">
-                        <input type="text" value="" placeholder="Importe mínimo" name="min-amount" validation-amount-less-than="max-amount">
+                      <div class="col-md-4 input-with-amount">
+                        <input type="text" value="" placeholder="Nombre cliente" name="min-amount" validation-amount-less-than="max-amount">
                       </div>
-                      <div class="col-md-3 input-with-amount">
-                        <input type="text" value="" placeholder="Importe máximo" name="max-amount" validation-amount-greater-than="min-amount">
+                      <div class="col-md-4 input-with-amount">
+                        <input type="text" value="" placeholder="Referencia" name="max-amount" validation-amount-greater-than="min-amount">
                       </div>
-                      <div class="col-md-3">
+                      <div class="col-md-4">
                         <div class="select-simple select-date-range">
                           <select name="date-range">
-                            <option value="">Tipo de archivo</option>
+                            <option value="">Cuenta</option>
                             <option value="0">Nóminas ABA-08</option>
                             <option value="1">Efectos ABA-01</option>
                             <option value="2">Recibos ABA-09</option>
@@ -464,34 +463,10 @@
                           </select>
                         </div>
                       </div>
-                      <div class="col-md-3">
-                        <input type="text" value="" placeholder="Descripción" name="descripcion" >
-                      </div>
+                      
                     </div>
 
-                    <div class="row">
-                      <div class="col-md-4">
-                        <div class="select-simple select-date-range">
-                          <select name="date-range">
-                            <option value="">Rango de fechas</option>
-                            <option value="Hoy">Hoy</option>
-                            <option value="Última semana">Última semana</option>
-                            <option value="Último mes">Último mes</option>
-                            <option value="Último semestre">Último semestre</option>
-                            <option value="Último año">Último año</option>
-                          </select>
-                        </div>
-                      </div>
-
-                      <div class="input-daterange past-dates">
-                        <div class="col-md-4">
-                          <input type="date" placeholder="Desde (dd/mm/aaaa)" id="search-start-date" name="search-start-date" class="start-date date-range" required>
-                        </div>
-                        <div class="col-md-4">
-                          <input type="date" placeholder="Hasta (dd/mm/aaaa)" id="search-end-date" name="search-end-date" class="end-date date-range" required>
-                        </div>
-                      </div>
-                    </div>
+                    
 
                     <div class="row">
 
@@ -581,11 +556,11 @@
 
                 <div class="element-list-row header-list">
                   <div class="element-list-summary-container">
-                    <div class="element-list-cell text-align-center width-col-1"><input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
+                    <div class="element-list-cell text-align-center width-col-1 excel"><input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
 <label for="mask-data" class="check only-check"></label></div>
                     <div class="element-list-cell text-align-center width-col-2">Nombre cliente</div>
-                    <div class="element-list-cell text-align-center width-col-2">Referencia cliente</div>
-                    <div class="element-list-cell text-align-center width-col-2">Cuenta</div>
+                    <div class="element-list-cell text-align-center width-col-4">Referencia cliente</div>
+                    <div class="element-list-cell text-align-center width-col-4">Cuenta</div>
                     <div class="element-list-cell text-align-center width-col-1"></div>
 
                   </div>
@@ -594,17 +569,17 @@
 
                 <div class="element-list-row with-details">
                   <div class="element-list-summary-container">
-                    <div class="element-list-cell align-middle text-align-center width-col-1">
+                    <div class="element-list-cell align-middle text-align-center width-col-1 excel">
                       <span class="element-list-mobile-label visible-xs">Contrato</span><input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
 							<label for="mask-data" class="check only-check"></label>
                     </div>
                     <div class="element-list-cell align-middle text-align-center width-col-2">
                       <span class="element-list-mobile-label visible-xs">Descripción</span> Emilio Perales
                     </div>
-                    <div class="element-list-cell align-middle text-align-center grey width-col-2">
+                    <div class="element-list-cell align-middle text-align-center grey width-col-4">
                       <span class="element-list-mobile-label visible-xs">Fecha de envío</span> 2348792027319183
                     </div>
-                    <div class="element-list-cell align-middle text-align-center width-col-2">
+                    <div class="element-list-cell align-middle text-align-center width-col-4">
                       <span class="element-list-mobile-label visible-xs">Canal</span>
                       ES2348792027319183
                     </div>
@@ -612,66 +587,8 @@
                     <div class="element-list-cell align-middle text-align-right width-col-1">
                       <span class="element-list-mobile-label visible-xs"></span>
                       <div class="icons-container">
-  											<a href="grs-envioficheros-seleccion-cuenta.html">
-  												<i class="icon-editar edit-action"></i>
-  											</a>
-  									  </div>
-                    </div>
-                  </div>
-
-
-
-                  <div class="element-list-details-container">
-                    <div class="element-list-details">
-                      <i class="icon-close close-action"></i>
-                      <div class="details-content">
-                        <div class="label-value">
-                          <span class="label">Cliente</span>
-                          <span class="value">Emilio Perales</span>
-                        </div>
-                        <div class="label-value">
-                          <span class="label">Referencia cliente</span>
-                          <span class="value">2348792027319183</span>
-                        </div>
-                        <div class="label-value">
-                          <span class="label">Cuenta</span>
-                          <span class="value">ES2348792027319183</span>
-                        </div>
-                        <div class="label-value">
-                          <span class="label">Domicilio</span>
-                          <span class="value">Avenida El pilar, 45</span>
-                        </div>
-                        
-                       
-                        
-
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-                <div class="element-list-row with-details">
-                  <div class="element-list-summary-container">
-                    <div class="element-list-cell align-middle text-align-center width-col-1">
-                      <span class="element-list-mobile-label visible-xs">Contrato</span><input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
-<label for="mask-data" class="check only-check"></label>
-                    </div>
-                    <div class="element-list-cell align-middle text-align-center width-col-2">
-                      <span class="element-list-mobile-label visible-xs">Descripción</span> Emilio Perales
-                    </div>
-                    <div class="element-list-cell align-middle text-align-center grey width-col-2">
-                      <span class="element-list-mobile-label visible-xs">Fecha de envío</span> 2348792027319183
-                    </div>
-                    <div class="element-list-cell align-middle text-align-center width-col-2">
-                      <span class="element-list-mobile-label visible-xs">Canal</span>
-                      ES2348792027319183
-                    </div>
-                    
-                    <div class="element-list-cell align-middle text-align-right width-col-1">
-                      <span class="element-list-mobile-label visible-xs"></span>
-                      <div class="icons-container">
-  											<a href="grs-envioficheros-seleccion-cuenta.html">
-  												<i class="icon-editar edit-action"></i>
+  											<a href="grs-alta-cliente.html">
+  												<img src="images/arrow1.png">
   											</a>
   									  </div>
                     </div>
@@ -710,17 +627,17 @@
                 </div>
                  <div class="element-list-row with-details">
                   <div class="element-list-summary-container">
-                    <div class="element-list-cell align-middle text-align-center width-col-1">
+                    <div class="element-list-cell align-middle text-align-center width-col-1 excel">
                       <span class="element-list-mobile-label visible-xs">Contrato</span><input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
-<label for="mask-data" class="check only-check"></label>
+							<label for="mask-data" class="check only-check"></label>
                     </div>
                     <div class="element-list-cell align-middle text-align-center width-col-2">
                       <span class="element-list-mobile-label visible-xs">Descripción</span> Emilio Perales
                     </div>
-                    <div class="element-list-cell align-middle text-align-center grey width-col-2">
+                    <div class="element-list-cell align-middle text-align-center grey width-col-4">
                       <span class="element-list-mobile-label visible-xs">Fecha de envío</span> 2348792027319183
                     </div>
-                    <div class="element-list-cell align-middle text-align-center width-col-2">
+                    <div class="element-list-cell align-middle text-align-center width-col-4">
                       <span class="element-list-mobile-label visible-xs">Canal</span>
                       ES2348792027319183
                     </div>
@@ -728,13 +645,12 @@
                     <div class="element-list-cell align-middle text-align-right width-col-1">
                       <span class="element-list-mobile-label visible-xs"></span>
                       <div class="icons-container">
-  											<a href="grs-envioficheros-seleccion-cuenta.html">
-  												<i class="icon-editar edit-action"></i>
+  											<a href="grs-alta-cliente.html">
+  												<img src="images/arrow1.png">
   											</a>
   									  </div>
                     </div>
                   </div>
-
 
 
                   <div class="element-list-details-container">
@@ -766,19 +682,19 @@
                   </div>
 
                 </div>
-                 <div class="element-list-row with-details">
+                  <div class="element-list-row with-details">
                   <div class="element-list-summary-container">
-                    <div class="element-list-cell align-middle text-align-center width-col-1">
+                    <div class="element-list-cell align-middle text-align-center width-col-1 excel">
                       <span class="element-list-mobile-label visible-xs">Contrato</span><input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
-<label for="mask-data" class="check only-check"></label>
+							<label for="mask-data" class="check only-check"></label>
                     </div>
                     <div class="element-list-cell align-middle text-align-center width-col-2">
                       <span class="element-list-mobile-label visible-xs">Descripción</span> Emilio Perales
                     </div>
-                    <div class="element-list-cell align-middle text-align-center grey width-col-2">
+                    <div class="element-list-cell align-middle text-align-center grey width-col-4">
                       <span class="element-list-mobile-label visible-xs">Fecha de envío</span> 2348792027319183
                     </div>
-                    <div class="element-list-cell align-middle text-align-center width-col-2">
+                    <div class="element-list-cell align-middle text-align-center width-col-4">
                       <span class="element-list-mobile-label visible-xs">Canal</span>
                       ES2348792027319183
                     </div>
@@ -786,13 +702,69 @@
                     <div class="element-list-cell align-middle text-align-right width-col-1">
                       <span class="element-list-mobile-label visible-xs"></span>
                       <div class="icons-container">
-  											<a href="grs-envioficheros-seleccion-cuenta.html">
-  												<i class="icon-editar edit-action"></i>
+  											<a href="grs-alta-cliente.html">
+  												<img src="images/arrow1.png">
   											</a>
   									  </div>
                     </div>
                   </div>
 
+
+                  <div class="element-list-details-container">
+                    <div class="element-list-details">
+                      <i class="icon-close close-action"></i>
+                      <div class="details-content">
+                        <div class="label-value">
+                          <span class="label">Cliente</span>
+                          <span class="value">Emilio Perales</span>
+                        </div>
+                        <div class="label-value">
+                          <span class="label">Referencia cliente</span>
+                          <span class="value">2348792027319183</span>
+                        </div>
+                        <div class="label-value">
+                          <span class="label">Cuenta</span>
+                          <span class="value">ES2348792027319183</span>
+                        </div>
+                        <div class="label-value">
+                          <span class="label">Domicilio</span>
+                          <span class="value">Avenida El pilar, 45</span>
+                        </div>
+                        
+                       
+                        
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                  <div class="element-list-row with-details">
+                  <div class="element-list-summary-container">
+                    <div class="element-list-cell align-middle text-align-center width-col-1 excel">
+                      <span class="element-list-mobile-label visible-xs">Contrato</span><input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
+							<label for="mask-data" class="check only-check"></label>
+                    </div>
+                    <div class="element-list-cell align-middle text-align-center width-col-2">
+                      <span class="element-list-mobile-label visible-xs">Descripción</span> Emilio Perales
+                    </div>
+                    <div class="element-list-cell align-middle text-align-center grey width-col-4">
+                      <span class="element-list-mobile-label visible-xs">Fecha de envío</span> 2348792027319183
+                    </div>
+                    <div class="element-list-cell align-middle text-align-center width-col-4">
+                      <span class="element-list-mobile-label visible-xs">Canal</span>
+                      ES2348792027319183
+                    </div>
+                    
+                    <div class="element-list-cell align-middle text-align-right width-col-1">
+                      <span class="element-list-mobile-label visible-xs"></span>
+                      <div class="icons-container">
+  											<a href="grs-alta-cliente.html">
+  												<img src="images/arrow1.png">
+  											</a>
+  									  </div>
+                    </div>
+                  </div>
 
 
                   <div class="element-list-details-container">
@@ -846,19 +818,19 @@
 
                 </div>
 
-                 <div class="element-list-row with-details">
+                  <div class="element-list-row with-details">
                   <div class="element-list-summary-container">
-                    <div class="element-list-cell align-middle text-align-center width-col-1">
+                    <div class="element-list-cell align-middle text-align-center width-col-1 excel">
                       <span class="element-list-mobile-label visible-xs">Contrato</span><input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
-<label for="mask-data" class="check only-check"></label>
+							<label for="mask-data" class="check only-check"></label>
                     </div>
                     <div class="element-list-cell align-middle text-align-center width-col-2">
                       <span class="element-list-mobile-label visible-xs">Descripción</span> Emilio Perales
                     </div>
-                    <div class="element-list-cell align-middle text-align-center grey width-col-2">
+                    <div class="element-list-cell align-middle text-align-center grey width-col-4">
                       <span class="element-list-mobile-label visible-xs">Fecha de envío</span> 2348792027319183
                     </div>
-                    <div class="element-list-cell align-middle text-align-center width-col-2">
+                    <div class="element-list-cell align-middle text-align-center width-col-4">
                       <span class="element-list-mobile-label visible-xs">Canal</span>
                       ES2348792027319183
                     </div>
@@ -866,13 +838,12 @@
                     <div class="element-list-cell align-middle text-align-right width-col-1">
                       <span class="element-list-mobile-label visible-xs"></span>
                       <div class="icons-container">
-  											<a href="grs-envioficheros-seleccion-cuenta.html">
-  												<i class="icon-editar edit-action"></i>
+  											<a href="grs-alta-cliente.html">
+  												<img src="images/arrow1.png">
   											</a>
   									  </div>
                     </div>
                   </div>
-
 
 
                  <div class="element-list-details-container">
@@ -904,19 +875,19 @@
                   </div>
 
                 </div>
-                <div class="element-list-row with-details">
+                 <div class="element-list-row with-details">
                   <div class="element-list-summary-container">
-                    <div class="element-list-cell align-middle text-align-center width-col-1">
+                    <div class="element-list-cell align-middle text-align-center width-col-1 excel">
                       <span class="element-list-mobile-label visible-xs">Contrato</span><input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
-<label for="mask-data" class="check only-check"></label>
+							<label for="mask-data" class="check only-check"></label>
                     </div>
                     <div class="element-list-cell align-middle text-align-center width-col-2">
                       <span class="element-list-mobile-label visible-xs">Descripción</span> Emilio Perales
                     </div>
-                    <div class="element-list-cell align-middle text-align-center grey width-col-2">
+                    <div class="element-list-cell align-middle text-align-center grey width-col-4">
                       <span class="element-list-mobile-label visible-xs">Fecha de envío</span> 2348792027319183
                     </div>
-                    <div class="element-list-cell align-middle text-align-center width-col-2">
+                    <div class="element-list-cell align-middle text-align-center width-col-4">
                       <span class="element-list-mobile-label visible-xs">Canal</span>
                       ES2348792027319183
                     </div>
@@ -924,13 +895,12 @@
                     <div class="element-list-cell align-middle text-align-right width-col-1">
                       <span class="element-list-mobile-label visible-xs"></span>
                       <div class="icons-container">
-  											<a href="grs-envioficheros-seleccion-cuenta.html">
-  												<i class="icon-editar edit-action"></i>
+  											<a href="grs-alta-cliente.html">
+  												<img src="images/arrow1.png">
   											</a>
   									  </div>
                     </div>
                   </div>
-
 
                   <div class="element-list-details-container">
                     <div class="element-list-details">
@@ -962,19 +932,19 @@
 
                 </div>
 
-                <div class="element-list-row with-details">
+                 <div class="element-list-row with-details">
                   <div class="element-list-summary-container">
-                    <div class="element-list-cell align-middle text-align-center width-col-1">
+                    <div class="element-list-cell align-middle text-align-center width-col-1 excel">
                       <span class="element-list-mobile-label visible-xs">Contrato</span><input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
-<label for="mask-data" class="check only-check"></label>
+							<label for="mask-data" class="check only-check"></label>
                     </div>
                     <div class="element-list-cell align-middle text-align-center width-col-2">
                       <span class="element-list-mobile-label visible-xs">Descripción</span> Emilio Perales
                     </div>
-                    <div class="element-list-cell align-middle text-align-center grey width-col-2">
+                    <div class="element-list-cell align-middle text-align-center grey width-col-4">
                       <span class="element-list-mobile-label visible-xs">Fecha de envío</span> 2348792027319183
                     </div>
-                    <div class="element-list-cell align-middle text-align-center width-col-2">
+                    <div class="element-list-cell align-middle text-align-center width-col-4">
                       <span class="element-list-mobile-label visible-xs">Canal</span>
                       ES2348792027319183
                     </div>
@@ -982,13 +952,12 @@
                     <div class="element-list-cell align-middle text-align-right width-col-1">
                       <span class="element-list-mobile-label visible-xs"></span>
                       <div class="icons-container">
-  											<a href="grs-envioficheros-seleccion-cuenta.html">
-  												<i class="icon-editar edit-action"></i>
+  											<a href="grs-alta-cliente.html">
+  												<img src="images/arrow1.png">
   											</a>
   									  </div>
                     </div>
                   </div>
-
 
 
                    <div class="element-list-details-container">
@@ -1020,19 +989,19 @@
                   </div>
 
                 </div>
-                 <div class="element-list-row with-details">
+                  <div class="element-list-row with-details">
                   <div class="element-list-summary-container">
-                    <div class="element-list-cell align-middle text-align-center width-col-1">
+                    <div class="element-list-cell align-middle text-align-center width-col-1 excel">
                       <span class="element-list-mobile-label visible-xs">Contrato</span><input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
-<label for="mask-data" class="check only-check"></label>
+							<label for="mask-data" class="check only-check"></label>
                     </div>
                     <div class="element-list-cell align-middle text-align-center width-col-2">
                       <span class="element-list-mobile-label visible-xs">Descripción</span> Emilio Perales
                     </div>
-                    <div class="element-list-cell align-middle text-align-center grey width-col-2">
+                    <div class="element-list-cell align-middle text-align-center grey width-col-4">
                       <span class="element-list-mobile-label visible-xs">Fecha de envío</span> 2348792027319183
                     </div>
-                    <div class="element-list-cell align-middle text-align-center width-col-2">
+                    <div class="element-list-cell align-middle text-align-center width-col-4">
                       <span class="element-list-mobile-label visible-xs">Canal</span>
                       ES2348792027319183
                     </div>
@@ -1040,13 +1009,12 @@
                     <div class="element-list-cell align-middle text-align-right width-col-1">
                       <span class="element-list-mobile-label visible-xs"></span>
                       <div class="icons-container">
-  											<a href="grs-envioficheros-seleccion-cuenta.html">
-  												<i class="icon-editar edit-action"></i>
+  											<a href="grs-alta-cliente.html">
+  												<img src="images/arrow1.png">
   											</a>
   									  </div>
                     </div>
                   </div>
-
 
                  <div class="element-list-details-container">
                     <div class="element-list-details">
@@ -1078,19 +1046,74 @@
 
                 </div>
 
+                  <div class="element-list-row with-details">
+                  <div class="element-list-summary-container">
+                    <div class="element-list-cell align-middle text-align-center width-col-1 excel">
+                      <span class="element-list-mobile-label visible-xs">Contrato</span><input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
+							<label for="mask-data" class="check only-check"></label>
+                    </div>
+                    <div class="element-list-cell align-middle text-align-center width-col-2">
+                      <span class="element-list-mobile-label visible-xs">Descripción</span> Emilio Perales
+                    </div>
+                    <div class="element-list-cell align-middle text-align-center grey width-col-4">
+                      <span class="element-list-mobile-label visible-xs">Fecha de envío</span> 2348792027319183
+                    </div>
+                    <div class="element-list-cell align-middle text-align-center width-col-4">
+                      <span class="element-list-mobile-label visible-xs">Canal</span>
+                      ES2348792027319183
+                    </div>
+                    
+                    <div class="element-list-cell align-middle text-align-right width-col-1">
+                      <span class="element-list-mobile-label visible-xs"></span>
+                      <div class="icons-container">
+  											<a href="grs-alta-cliente.html">
+  												<img src="images/arrow1.png">
+  											</a>
+  									  </div>
+                    </div>
+                  </div>
+
+                  <div class="element-list-details-container">
+                    <div class="element-list-details">
+                      <i class="icon-close close-action"></i>
+                      <div class="details-content">
+                        <div class="label-value">
+                          <span class="label">Cliente</span>
+                          <span class="value">Emilio Perales</span>
+                        </div>
+                        <div class="label-value">
+                          <span class="label">Referencia cliente</span>
+                          <span class="value">2348792027319183</span>
+                        </div>
+                        <div class="label-value">
+                          <span class="label">Cuenta</span>
+                          <span class="value">ES2348792027319183</span>
+                        </div>
+                        <div class="label-value">
+                          <span class="label">Domicilio</span>
+                          <span class="value">Avenida El pilar, 45</span>
+                        </div>
+                        
+                       
+                        
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
                  <div class="element-list-row with-details">
                   <div class="element-list-summary-container">
-                    <div class="element-list-cell align-middle text-align-center width-col-1">
+                    <div class="element-list-cell align-middle text-align-center width-col-1 excel">
                       <span class="element-list-mobile-label visible-xs">Contrato</span><input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
-<label for="mask-data" class="check only-check"></label>
+							<label for="mask-data" class="check only-check"></label>
                     </div>
                     <div class="element-list-cell align-middle text-align-center width-col-2">
                       <span class="element-list-mobile-label visible-xs">Descripción</span> Emilio Perales
                     </div>
-                    <div class="element-list-cell align-middle text-align-center grey width-col-2">
+                    <div class="element-list-cell align-middle text-align-center grey width-col-4">
                       <span class="element-list-mobile-label visible-xs">Fecha de envío</span> 2348792027319183
                     </div>
-                    <div class="element-list-cell align-middle text-align-center width-col-2">
+                    <div class="element-list-cell align-middle text-align-center width-col-4">
                       <span class="element-list-mobile-label visible-xs">Canal</span>
                       ES2348792027319183
                     </div>
@@ -1098,8 +1121,65 @@
                     <div class="element-list-cell align-middle text-align-right width-col-1">
                       <span class="element-list-mobile-label visible-xs"></span>
                       <div class="icons-container">
-  											<a href="grs-envioficheros-seleccion-cuenta.html">
-  												<i class="icon-editar edit-action"></i>
+  											<a href="grs-alta-cliente.html">
+  												<img src="images/arrow1.png">
+  											</a>
+  									  </div>
+                    </div>
+                  </div>
+
+                  <div class="element-list-details-container">
+                    <div class="element-list-details">
+                      <i class="icon-close close-action"></i>
+                      <div class="details-content">
+                        <div class="label-value">
+                          <span class="label">Cliente</span>
+                          <span class="value">Emilio Perales</span>
+                        </div>
+                        <div class="label-value">
+                          <span class="label">Referencia cliente</span>
+                          <span class="value">2348792027319183</span>
+                        </div>
+                        <div class="label-value">
+                          <span class="label">Cuenta</span>
+                          <span class="value">ES2348792027319183</span>
+                        </div>
+                        <div class="label-value">
+                          <span class="label">Domicilio</span>
+                          <span class="value">Avenida El pilar, 45</span>
+                        </div>
+                        
+                       
+                        
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                 <div class="element-list-row with-details">
+                  <div class="element-list-summary-container">
+                    <div class="element-list-cell align-middle text-align-center width-col-1 excel">
+                      <span class="element-list-mobile-label visible-xs">Contrato</span><input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
+							<label for="mask-data" class="check only-check"></label>
+                    </div>
+                    <div class="element-list-cell align-middle text-align-center width-col-2">
+                      <span class="element-list-mobile-label visible-xs">Descripción</span> Emilio Perales
+                    </div>
+                    <div class="element-list-cell align-middle text-align-center grey width-col-4">
+                      <span class="element-list-mobile-label visible-xs">Fecha de envío</span> 2348792027319183
+                    </div>
+                    <div class="element-list-cell align-middle text-align-center width-col-4">
+                      <span class="element-list-mobile-label visible-xs">Canal</span>
+                      ES2348792027319183
+                    </div>
+                    
+                    <div class="element-list-cell align-middle text-align-right width-col-1">
+                      <span class="element-list-mobile-label visible-xs"></span>
+                      <div class="icons-container">
+  											<a href="grs-alta-cliente.html">
+  												<img src="images/arrow1.png">
   											</a>
   									  </div>
                     </div>
@@ -1134,19 +1214,19 @@
                     </div>
                   </div>
                 </div>
-                <div class="element-list-row with-details">
+                 <div class="element-list-row with-details">
                   <div class="element-list-summary-container">
-                    <div class="element-list-cell align-middle text-align-center width-col-1">
+                    <div class="element-list-cell align-middle text-align-center width-col-1 excel">
                       <span class="element-list-mobile-label visible-xs">Contrato</span><input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
-<label for="mask-data" class="check only-check"></label>
+							<label for="mask-data" class="check only-check"></label>
                     </div>
                     <div class="element-list-cell align-middle text-align-center width-col-2">
                       <span class="element-list-mobile-label visible-xs">Descripción</span> Emilio Perales
                     </div>
-                    <div class="element-list-cell align-middle text-align-center grey width-col-2">
+                    <div class="element-list-cell align-middle text-align-center grey width-col-4">
                       <span class="element-list-mobile-label visible-xs">Fecha de envío</span> 2348792027319183
                     </div>
-                    <div class="element-list-cell align-middle text-align-center width-col-2">
+                    <div class="element-list-cell align-middle text-align-center width-col-4">
                       <span class="element-list-mobile-label visible-xs">Canal</span>
                       ES2348792027319183
                     </div>
@@ -1154,128 +1234,12 @@
                     <div class="element-list-cell align-middle text-align-right width-col-1">
                       <span class="element-list-mobile-label visible-xs"></span>
                       <div class="icons-container">
-  											<a href="grs-envioficheros-seleccion-cuenta.html">
-  												<i class="icon-editar edit-action"></i>
+  											<a href="grs-alta-cliente.html">
+  												<img src="images/arrow1.png">
   											</a>
   									  </div>
                     </div>
                   </div>
-
-
-                  <div class="element-list-details-container">
-                    <div class="element-list-details">
-                      <i class="icon-close close-action"></i>
-                      <div class="details-content">
-                        <div class="label-value">
-                          <span class="label">Cliente</span>
-                          <span class="value">Emilio Perales</span>
-                        </div>
-                        <div class="label-value">
-                          <span class="label">Referencia cliente</span>
-                          <span class="value">2348792027319183</span>
-                        </div>
-                        <div class="label-value">
-                          <span class="label">Cuenta</span>
-                          <span class="value">ES2348792027319183</span>
-                        </div>
-                        <div class="label-value">
-                          <span class="label">Domicilio</span>
-                          <span class="value">Avenida El pilar, 45</span>
-                        </div>
-                        
-                       
-                        
-
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div class="element-list-row with-details">
-                  <div class="element-list-summary-container">
-                    <div class="element-list-cell align-middle text-align-center width-col-1">
-                      <span class="element-list-mobile-label visible-xs">Contrato</span><input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
-<label for="mask-data" class="check only-check"></label>
-                    </div>
-                    <div class="element-list-cell align-middle text-align-center width-col-2">
-                      <span class="element-list-mobile-label visible-xs">Descripción</span> Emilio Perales
-                    </div>
-                    <div class="element-list-cell align-middle text-align-center grey width-col-2">
-                      <span class="element-list-mobile-label visible-xs">Fecha de envío</span> 2348792027319183
-                    </div>
-                    <div class="element-list-cell align-middle text-align-center width-col-2">
-                      <span class="element-list-mobile-label visible-xs">Canal</span>
-                      ES2348792027319183
-                    </div>
-                    
-                    <div class="element-list-cell align-middle text-align-right width-col-1">
-                      <span class="element-list-mobile-label visible-xs"></span>
-                      <div class="icons-container">
-  											<a href="grs-envioficheros-seleccion-cuenta.html">
-  												<i class="icon-editar edit-action"></i>
-  											</a>
-  									  </div>
-                    </div>
-                  </div>
-
-
-
-                  <div class="element-list-details-container">
-                    <div class="element-list-details">
-                      <i class="icon-close close-action"></i>
-                      <div class="details-content">
-                        <div class="label-value">
-                          <span class="label">Cliente</span>
-                          <span class="value">Emilio Perales</span>
-                        </div>
-                        <div class="label-value">
-                          <span class="label">Referencia cliente</span>
-                          <span class="value">2348792027319183</span>
-                        </div>
-                        <div class="label-value">
-                          <span class="label">Cuenta</span>
-                          <span class="value">ES2348792027319183</span>
-                        </div>
-                        <div class="label-value">
-                          <span class="label">Domicilio</span>
-                          <span class="value">Avenida El pilar, 45</span>
-                        </div>
-                        
-                       
-                        
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="element-list-row with-details">
-                  <div class="element-list-summary-container">
-                    <div class="element-list-cell align-middle text-align-center width-col-1">
-                      <span class="element-list-mobile-label visible-xs">Contrato</span><input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
-<label for="mask-data" class="check only-check"></label>
-                    </div>
-                    <div class="element-list-cell align-middle text-align-center width-col-2">
-                      <span class="element-list-mobile-label visible-xs">Descripción</span> Emilio Perales
-                    </div>
-                    <div class="element-list-cell align-middle text-align-center grey width-col-2">
-                      <span class="element-list-mobile-label visible-xs">Fecha de envío</span> 2348792027319183
-                    </div>
-                    <div class="element-list-cell align-middle text-align-center width-col-2">
-                      <span class="element-list-mobile-label visible-xs">Canal</span>
-                      ES2348792027319183
-                    </div>
-                    
-                    <div class="element-list-cell align-middle text-align-right width-col-1">
-                      <span class="element-list-mobile-label visible-xs"></span>
-                      <div class="icons-container">
-  											<a href="grs-envioficheros-seleccion-cuenta.html">
-  												<i class="icon-editar edit-action"></i>
-  											</a>
-  									  </div>
-                    </div>
-                  </div>
-
 
                   <div class="element-list-details-container">
                     <div class="element-list-details">
@@ -1329,7 +1293,7 @@
                             </div>
 
                             <div class="col-md-6 button-container">
-                              <a href="#" class="btn-outline operation-button btn-action">Alta cliente</a>
+                              <a href="grs-alta-cliente.html" class="btn-outline operation-button btn-action">Alta cliente</a>
                             </div>
 
                            
@@ -1935,8 +1899,8 @@
                     <div class="element-list-cell align-middle text-align-right width-col-1">
                       <span class="element-list-mobile-label visible-xs"></span>
                       <div class="icons-container">
-  											<a href="grs-envioficheros-seleccion-cuenta.html">
-  												<i class="icon-editar edit-action"></i>
+  											<a href="grs-alta-cliente.html">
+  												<img src="images/arrow1.png">
   											</a>
   									  </div>
                     </div>
@@ -2021,8 +1985,8 @@
                     <div class="element-list-cell align-middle text-align-right width-col-1">
                       <span class="element-list-mobile-label visible-xs"></span>
                       <div class="icons-container">
-  											<a href="grs-envioficheros-seleccion-cuenta.html">
-  												<i class="icon-editar edit-action"></i>
+  											<a href="grs-alta-cliente.html">
+  												<img src="images/arrow1.png">
   											</a>
   									  </div>
                     </div>
@@ -2108,8 +2072,8 @@
                     <div class="element-list-cell align-middle text-align-right width-col-1">
                       <span class="element-list-mobile-label visible-xs"></span>
                       <div class="icons-container">
-  											<a href="grs-envioficheros-seleccion-cuenta.html">
-  												<i class="icon-editar edit-action"></i>
+  											<a href="grs-alta-cliente.html">
+  												<img src="images/arrow1.png">
   											</a>
   									  </div>
                     </div>
@@ -2195,8 +2159,8 @@
                     <div class="element-list-cell align-middle text-align-right width-col-1">
                       <span class="element-list-mobile-label visible-xs"></span>
                       <div class="icons-container">
-  											<a href="grs-envioficheros-seleccion-cuenta.html">
-  												<i class="icon-editar edit-action"></i>
+  											<a href="grs-alta-cliente.html">
+  												<img src="images/arrow1.png">
   											</a>
   									  </div>
                     </div>
@@ -2282,8 +2246,8 @@
                     <div class="element-list-cell align-middle text-align-right width-col-1">
                       <span class="element-list-mobile-label visible-xs"></span>
                       <div class="icons-container">
-  											<a href="grs-envioficheros-seleccion-cuenta.html">
-  												<i class="icon-editar edit-action"></i>
+  											<a href="grs-alta-cliente.html">
+  												<img src="images/arrow1.png">
   											</a>
   									  </div>
                     </div>
@@ -2369,8 +2333,8 @@
                     <div class="element-list-cell align-middle text-align-right width-col-1">
                       <span class="element-list-mobile-label visible-xs"></span>
                       <div class="icons-container">
-  											<a href="grs-envioficheros-seleccion-cuenta.html">
-  												<i class="icon-editar edit-action"></i>
+  											<a href="grs-alta-cliente.html">
+  												<img src="images/arrow1.png">
   											</a>
   									  </div>
                     </div>
