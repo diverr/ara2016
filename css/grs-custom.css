@@ -61,3 +61,27 @@ div.icon-contratos {
 .separar {margin-top:50px;}	
 .separar1 {margin-top:20px;}
 .scroll-vertical {overflow-y: scroll;max-height: 553px;}
+.excel-cuentas {    height: 35px !important;
+    min-height: inherit !important;
+    width: 50px;
+ }
+.element-list-cell.align-middle.text-align-center.width-col-2.excel, .element-list-cell.align-middle.text-align-center.width-col-1.excel, .element-list-cell.text-align-center.width-col-1.excel   { text-align: left;
+    margin-left: -89px;
+    position: absolute;
+	margin-top: 6px;}
+.success-details
+ {    text-align: center;
+    color: #87898C;
+ }
+ .flecha1 {margin-top:200px !important;} 
+ .flecha {display: block;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+ }
+.informame {    margin-top: -50px;
+    position: absolute;
+    font-size: 25px;
+    margin-left: 515px;
+}
+ 
