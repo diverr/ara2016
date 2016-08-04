@@ -3,6 +3,8 @@
 
 <head>
   <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/grs-custom.css">
+
 
   <title>MoraBanc - Gestión Remesas</title>
   <meta charset="utf-8">
@@ -395,12 +397,691 @@
             <div class="swiper-slide" data-hash="movimientos">
               <div class="panel-cuentas seccion container" data-anchor="movimientos">
                 <div class="container">
+                
+              <div class="col-md-offset-3 col-md-6">
+                <div class="title-with-info">
+                  <h2 class="section-title form-block-title">¿Que grupo de clientes?</h2>
+                  
+                  <div class="form-funnel-row">
+      						<div class="select-account">
+      							<select name="origin-account" data-label="Selecciona el grupo de clientes" tabindex="2" required="" aria-required="false">
+      								<option data-alias="Grupo1" data-amount="" data-currency="" value="Grupo1">Grupo1</option>
+      								<option data-alias="Grupo2" data-amount="" data-currency="" value="Grupo2">Grupo2</option>
+      							</select>
+      						
+
+                </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      <div class="container">
+        <div class="col-md-12">
+          <div class="list-activities-component">
+
+            <div class="list-search-row clearfix">
+              <form action="#" method="post" id="search-form" class="search-form">
+                <input type="search" id="input-advanced-search" class="search" placeholder="Buscar" data-placeholder-default="Buscar" data-placeholder-results="Resultados para">
+                <div class="icon-search-container">
+                  <button type="submit" class="with-icon">
+                    <i class="icon-search"></i>
+                  </button>
+                </div>
+              </form>
+              <div class="icon-options">
+                <i class="icon-print hidden-xs" data-action="print"></i>
+                <i class="icon-send hidden-xs" data-action="send"></i>
+                <i class="icon-download hidden-xs" data-action="download" style="font-size: 1.3em;"></i>
+                <label id="icon-options-label" class="error align-right one-line hide">Se supera el límite de documentos a exportar</label>
+              </div>
+              <div class="popups-forms">
+                <div class="popup-info download hide">
+                  <div class="popup-wrapper">
+                    <p>Exportar a PDF</p>
+                    <p>Exportar a Excel</p>
+                  </div>
+                </div>
+                <div class="popup-info send hide">
+                  <div class="popup-wrapper align-center">
+                    <form action="" method="post">
+                      <div class="relative">
+                        <input type="email" name="email-popup-form-imput" id="email-popup-form-imput" placeholder="Dirección de correo" class="align-center" value="j*****@gmail.com" required>
+                      </div>
+                      <input type="submit" id="submit-send-popup-search" class="btn-action small-margin-top" value="Enviar">
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="list-search-options-row clearfix">
+              <div class="advanced-search">
+                <p class="advanced-search-trigger">
+                  <i class="icon-filtros"></i> Búsqueda avanzada
+                  <i class="icon-close"></i>
+                </p>
+                <div class="form-container advanced-form hide">
+                  <form action="#" method="post" id="advanced-search-form">
+                    <div class="row">
+                      <div class="col-md-4 input-with-amount">
+                        <input type="text" value="" placeholder="Nombre cliente" name="min-amount" validation-amount-less-than="max-amount">
+                      </div>
+                      <div class="col-md-4 input-with-amount">
+                        <input type="text" value="" placeholder="Referencia" name="max-amount" validation-amount-greater-than="min-amount">
+                      </div>
+                      <div class="col-md-4">
+                        <div class="select-simple select-date-range">
+                          <select name="date-range">
+                            <option value="">Cuenta</option>
+                            <option value="0">Nóminas ABA-08</option>
+                            <option value="1">Efectos ABA-01</option>
+                            <option value="2">Recibos ABA-09</option>
+                            <option value="3">Parquímetros ABA-25</option>
+                            <option value="4">Transferencias ABA-02</option>
+                            <option value="5">Pagos confirming</option>
+                          </select>
+                        </div>
+                      </div>
+                      
+                    </div>
+
+                    
+
+                    <div class="row">
+
+                      <div class="col-md-offset-4 col-md-4">
+                        <input type="submit" id="submit-advanced-search" class="btn-action" value="Buscar" data-placeholder-results="Resultados para la Búsqueda Avanzada">
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+
+                <div class="actions-search hide">
+                  <div class="form-container">
+                    <i class="icon-close"></i>
+                    <form action="#" method="post" id="actions-search-form">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="select-simple select-date-range">
+                            <select name="date-range">
+                              <option value="">Rango de fechas</option>
+                              <option value="Hoy">Hoy</option>
+                              <option value="Última semana">Última semana</option>
+                              <option value="Último mes">Último mes</option>
+                              <option value="Último semestre">Último semestre</option>
+                              <option value="Último año">Último año</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="input-daterange past-dates">
+                          <div class="col-md-4">
+                            <input type="date" placeholder="Desde (dd/mm/aaaa)" id="search-start-date" name="search-start-date" class="start-date date-range" required>
+                          </div>
+                          <div class="col-md-4">
+                            <input type="date" placeholder="Hasta (dd/mm/aaaa)" id="search-end-date" name="search-end-date" class="end-date date-range" required>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row action-search-row download hide">
+                        <div class="col-md-offset-2 col-md-4">
+                          <input type="submit" class="btn-action" value="Exportar a excel">
+                        </div>
+                        <div class="col-md-4">
+                          <input type="submit" class="btn-action" value="Exportar a PDF">
+                        </div>
+                      </div>
+                      <div class="row action-search-row send hide">
+                        <div class="col-md-offset-2 col-md-4">
+                          <input type="email" name="email-form-imput" id="email-form-imput" placeholder="Dirección de correo" value="j*****@gmail.com" required>
+                        </div>
+                        <div class="col-md-4">
+                          <input type="submit" class="btn-action" value="Enviar">
+                        </div>
+                      </div>
+                      <div class="row action-search-row print hide">
+                        <div class="col-md-offset-4 col-md-4">
+                          <input type="submit" class="btn-action" value="Imprimir">
+                        </div>
+                      </div>
+
+                    </form>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+      
+      
+              <div class="list-elements-component no-border-top">
+
+                <div class="element-list-row header-list">
+                  <div class="element-list-summary-container">
+                    <div class="element-list-cell text-align-center width-col-1 excel"><input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
+<label for="mask-data" class="check only-check"></label></div>
+                    <div class="element-list-cell text-align-center width-col-2">Nombre cliente</div>
+                    <div class="element-list-cell text-align-center width-col-2">Referencia cliente</div>
+                    <div class="element-list-cell text-align-center width-col-2">Cuenta</div>
+                    <div class="element-list-cell text-align-center width-col-2">Concepto</div>
+                    <div class="element-list-cell text-align-center width-col-2">Importe</div>
+                    <div class="element-list-cell text-align-center width-col-1"></div>
+
+                  </div>
+                </div>
+
+
+                <div class="element-list-row with-details">
+                  <div class="element-list-summary-container">
+                    <div class="element-list-cell align-middle text-align-center width-col-1 excel">
+                      <span class="element-list-mobile-label visible-xs">Contrato</span><input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
+							<label for="mask-data" class="check only-check"></label>
+                    </div>
+                    <div class="element-list-cell align-middle text-align-center width-col-2">
+                      <span class="element-list-mobile-label visible-xs">Descripción</span> Emilio Perales
+                    </div>
+                    <div class="element-list-cell align-middle text-align-center grey width-col-2">
+                      <span class="element-list-mobile-label visible-xs">Fecha de envío</span> 2348792027319183
+                    </div>
+                    <div class="element-list-cell align-middle text-align-center width-col-2">
+                      <span class="element-list-mobile-label visible-xs">Cuenta</span>
+                      ES2348792027319183
+                    </div>
+                     <div class="element-list-cell align-middle text-align-center width-col-2">
+                      <span class="element-list-mobile-label visible-xs">Concepto</span>
+                      ES2348792027319183
+                    </div>
+                     <div class="element-list-cell align-middle text-align-center width-col-2">
+                      <span class="element-list-mobile-label visible-xs">Importe</span>
+                      ES2348792027319183
+                    </div>
+                    
+                    <div class="element-list-cell align-middle text-align-right width-col-1">
+                      <span class="element-list-mobile-label visible-xs"></span>
+                      <div class="icons-container">
+  											<a href="grs-alta-cliente.html">
+  												<img src="images/arrow1.png">
+  											</a>
+                                            <a href="#">
+  												<i class="icon-download hidden-xs" data-action="download" style="font-size: 1.3em;margin-top: 4px;float: right;"></i>
+  											</a>
+  									  </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="element-list-details-container">
+                    <div class="element-list-details">
+                      <i class="icon-close close-action"></i>
+                      <div class="details-content">
+                        <div class="label-value">
+                          <span class="label">Cliente</span>
+                          <span class="value">Emilio Perales</span>
+                        </div>
+                        <div class="label-value">
+                          <span class="label">Referencia cliente</span>
+                          <span class="value">2348792027319183</span>
+                        </div>
+                        <div class="label-value">
+                          <span class="label">Cuenta</span>
+                          <span class="value">ES2348792027319183</span>
+                        </div>
+                        <div class="label-value">
+                          <span class="label">Domicilio</span>
+                          <span class="value">Avenida El pilar, 45</span>
+                        </div>
+                        <div class="label-value">
+                         <div class="col-md-2">
+                          <a href="#" class="btn-action" style="margin-left:-20px; margin-top:5px;">Editar recibo</a>
+                        </div>
+                         </div>
+                        
+                       
+                        
+
+                      </div>
+                    </div>
+                    
+                    
+                  </div>
+
+                </div>	
+                
+                   <div class="element-list-row with-details">
+                  <div class="element-list-summary-container">
+                    <div class="element-list-cell align-middle text-align-center width-col-1 excel">
+                      <span class="element-list-mobile-label visible-xs">Contrato</span><input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
+							<label for="mask-data" class="check only-check"></label>
+                    </div>
+                    <div class="element-list-cell align-middle text-align-center width-col-2">
+                      <span class="element-list-mobile-label visible-xs">Descripción</span> Emilio Perales
+                    </div>
+                    <div class="element-list-cell align-middle text-align-center grey width-col-2">
+                      <span class="element-list-mobile-label visible-xs">Fecha de envío</span> 2348792027319183
+                    </div>
+                    <div class="element-list-cell align-middle text-align-center width-col-2">
+                      <span class="element-list-mobile-label visible-xs">Cuenta</span>
+                      ES2348792027319183
+                    </div>
+                     <div class="element-list-cell align-middle text-align-center width-col-2">
+                      <span class="element-list-mobile-label visible-xs">Concepto</span>
+                      ES2348792027319183
+                    </div>
+                     <div class="element-list-cell align-middle text-align-center width-col-2">
+                      <span class="element-list-mobile-label visible-xs">Importe</span>
+                      ES2348792027319183
+                    </div>
+                    
+                    <div class="element-list-cell align-middle text-align-right width-col-1">
+                      <span class="element-list-mobile-label visible-xs"></span>
+                      <div class="icons-container">
+  											<a href="grs-alta-cliente.html">
+  												<img src="images/arrow1.png">
+  											</a>
+                                            <a href="#">
+  												<i class="icon-download hidden-xs" data-action="download" style="font-size: 1.3em;margin-top: 4px;float: right;"></i>
+  											</a>
+  									  </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="element-list-details-container">
+                    <div class="element-list-details">
+                      <i class="icon-close close-action"></i>
+                      <div class="details-content">
+                        <div class="label-value">
+                          <span class="label">Cliente</span>
+                          <span class="value">Emilio Perales</span>
+                        </div>
+                        <div class="label-value">
+                          <span class="label">Referencia cliente</span>
+                          <span class="value">2348792027319183</span>
+                        </div>
+                        <div class="label-value">
+                          <span class="label">Cuenta</span>
+                          <span class="value">ES2348792027319183</span>
+                        </div>
+                        <div class="label-value">
+                          <span class="label">Domicilio</span>
+                          <span class="value">Avenida El pilar, 45</span>
+                        </div>
+                        <div class="label-value">
+                         <div class="col-md-2">
+                          <a href="#" class="btn-action" style="margin-left:-20px; margin-top:5px;">Editar recibo</a>
+                        </div>
+                         </div>
+                        
+                       
+                        
+
+                      </div>
+                    </div>
+                    
+                    
+                  </div>
+
+                </div>	
+                   <div class="element-list-row with-details">
+                  <div class="element-list-summary-container">
+                    <div class="element-list-cell align-middle text-align-center width-col-1 excel">
+                      <span class="element-list-mobile-label visible-xs">Contrato</span><input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
+							<label for="mask-data" class="check only-check"></label>
+                    </div>
+                    <div class="element-list-cell align-middle text-align-center width-col-2">
+                      <span class="element-list-mobile-label visible-xs">Descripción</span> Emilio Perales
+                    </div>
+                    <div class="element-list-cell align-middle text-align-center grey width-col-2">
+                      <span class="element-list-mobile-label visible-xs">Fecha de envío</span> 2348792027319183
+                    </div>
+                    <div class="element-list-cell align-middle text-align-center width-col-2">
+                      <span class="element-list-mobile-label visible-xs">Cuenta</span>
+                      ES2348792027319183
+                    </div>
+                     <div class="element-list-cell align-middle text-align-center width-col-2">
+                      <span class="element-list-mobile-label visible-xs">Concepto</span>
+                      ES2348792027319183
+                    </div>
+                     <div class="element-list-cell align-middle text-align-center width-col-2">
+                      <span class="element-list-mobile-label visible-xs">Importe</span>
+                      ES2348792027319183
+                    </div>
+                    
+                    <div class="element-list-cell align-middle text-align-right width-col-1">
+                      <span class="element-list-mobile-label visible-xs"></span>
+                      <div class="icons-container">
+  											<a href="grs-alta-cliente.html">
+  												<img src="images/arrow1.png">
+  											</a>
+                                            <a href="#">
+  												<i class="icon-download hidden-xs" data-action="download" style="font-size: 1.3em;margin-top: 4px;float: right;"></i>
+  											</a>
+  									  </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="element-list-details-container">
+                    <div class="element-list-details">
+                      <i class="icon-close close-action"></i>
+                      <div class="details-content">
+                        <div class="label-value">
+                          <span class="label">Cliente</span>
+                          <span class="value">Emilio Perales</span>
+                        </div>
+                        <div class="label-value">
+                          <span class="label">Referencia cliente</span>
+                          <span class="value">2348792027319183</span>
+                        </div>
+                        <div class="label-value">
+                          <span class="label">Cuenta</span>
+                          <span class="value">ES2348792027319183</span>
+                        </div>
+                        <div class="label-value">
+                          <span class="label">Domicilio</span>
+                          <span class="value">Avenida El pilar, 45</span>
+                        </div>
+                        <div class="label-value">
+                         <div class="col-md-2">
+                          <a href="#" class="btn-action" style="margin-left:-20px; margin-top:5px;">Editar recibo</a>
+                        </div>
+                         </div>
+                        
+                       
+                        
+
+                      </div>
+                    </div>
+                    
+                    
+                  </div>
+
+                </div>	
+                   <div class="element-list-row with-details">
+                  <div class="element-list-summary-container">
+                    <div class="element-list-cell align-middle text-align-center width-col-1 excel">
+                      <span class="element-list-mobile-label visible-xs">Contrato</span><input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
+							<label for="mask-data" class="check only-check"></label>
+                    </div>
+                    <div class="element-list-cell align-middle text-align-center width-col-2">
+                      <span class="element-list-mobile-label visible-xs">Descripción</span> Emilio Perales
+                    </div>
+                    <div class="element-list-cell align-middle text-align-center grey width-col-2">
+                      <span class="element-list-mobile-label visible-xs">Fecha de envío</span> 2348792027319183
+                    </div>
+                    <div class="element-list-cell align-middle text-align-center width-col-2">
+                      <span class="element-list-mobile-label visible-xs">Cuenta</span>
+                      ES2348792027319183
+                    </div>
+                     <div class="element-list-cell align-middle text-align-center width-col-2">
+                      <span class="element-list-mobile-label visible-xs">Concepto</span>
+                      ES2348792027319183
+                    </div>
+                     <div class="element-list-cell align-middle text-align-center width-col-2">
+                      <span class="element-list-mobile-label visible-xs">Importe</span>
+                      ES2348792027319183
+                    </div>
+                    
+                    <div class="element-list-cell align-middle text-align-right width-col-1">
+                      <span class="element-list-mobile-label visible-xs"></span>
+                      <div class="icons-container">
+  											<a href="grs-alta-cliente.html">
+  												<img src="images/arrow1.png">
+  											</a>
+                                            <a href="#">
+  												<i class="icon-download hidden-xs" data-action="download" style="font-size: 1.3em;margin-top: 4px;float: right;"></i>
+  											</a>
+  									  </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="element-list-details-container">
+                    <div class="element-list-details">
+                      <i class="icon-close close-action"></i>
+                      <div class="details-content">
+                        <div class="label-value">
+                          <span class="label">Cliente</span>
+                          <span class="value">Emilio Perales</span>
+                        </div>
+                        <div class="label-value">
+                          <span class="label">Referencia cliente</span>
+                          <span class="value">2348792027319183</span>
+                        </div>
+                        <div class="label-value">
+                          <span class="label">Cuenta</span>
+                          <span class="value">ES2348792027319183</span>
+                        </div>
+                        <div class="label-value">
+                          <span class="label">Domicilio</span>
+                          <span class="value">Avenida El pilar, 45</span>
+                        </div>
+                        <div class="label-value">
+                         <div class="col-md-2">
+                          <a href="#" class="btn-action" style="margin-left:-20px; margin-top:5px;">Editar recibo</a>
+                        </div>
+                         </div>
+                        
+                       
+                        
+
+                      </div>
+                    </div>
+                    
+                    
+                  </div>
+
+                </div>	
+                   <div class="element-list-row with-details">
+                  <div class="element-list-summary-container">
+                    <div class="element-list-cell align-middle text-align-center width-col-1 excel">
+                      <span class="element-list-mobile-label visible-xs">Contrato</span><input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
+							<label for="mask-data" class="check only-check"></label>
+                    </div>
+                    <div class="element-list-cell align-middle text-align-center width-col-2">
+                      <span class="element-list-mobile-label visible-xs">Descripción</span> Emilio Perales
+                    </div>
+                    <div class="element-list-cell align-middle text-align-center grey width-col-2">
+                      <span class="element-list-mobile-label visible-xs">Fecha de envío</span> 2348792027319183
+                    </div>
+                    <div class="element-list-cell align-middle text-align-center width-col-2">
+                      <span class="element-list-mobile-label visible-xs">Cuenta</span>
+                      ES2348792027319183
+                    </div>
+                     <div class="element-list-cell align-middle text-align-center width-col-2">
+                      <span class="element-list-mobile-label visible-xs">Concepto</span>
+                      ES2348792027319183
+                    </div>
+                     <div class="element-list-cell align-middle text-align-center width-col-2">
+                      <span class="element-list-mobile-label visible-xs">Importe</span>
+                      ES2348792027319183
+                    </div>
+                    
+                    <div class="element-list-cell align-middle text-align-right width-col-1">
+                      <span class="element-list-mobile-label visible-xs"></span>
+                      <div class="icons-container">
+  											<a href="grs-alta-cliente.html">
+  												<img src="images/arrow1.png">
+  											</a>
+                                            <a href="#">
+  												<i class="icon-download hidden-xs" data-action="download" style="font-size: 1.3em;margin-top: 4px;float: right;"></i>
+  											</a>
+  									  </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="element-list-details-container">
+                    <div class="element-list-details">
+                      <i class="icon-close close-action"></i>
+                      <div class="details-content">
+                        <div class="label-value">
+                          <span class="label">Cliente</span>
+                          <span class="value">Emilio Perales</span>
+                        </div>
+                        <div class="label-value">
+                          <span class="label">Referencia cliente</span>
+                          <span class="value">2348792027319183</span>
+                        </div>
+                        <div class="label-value">
+                          <span class="label">Cuenta</span>
+                          <span class="value">ES2348792027319183</span>
+                        </div>
+                        <div class="label-value">
+                          <span class="label">Domicilio</span>
+                          <span class="value">Avenida El pilar, 45</span>
+                        </div>
+                        <div class="label-value">
+                         <div class="col-md-2">
+                          <a href="#" class="btn-action" style="margin-left:-20px; margin-top:5px;">Editar recibo</a>
+                        </div>
+                         </div>
+                        
+                       
+                        
+
+                      </div>
+                    </div>
+                    
+                    
+                  </div>
+
+                </div>	
+                   <div class="element-list-row with-details">
+                  <div class="element-list-summary-container">
+                    <div class="element-list-cell align-middle text-align-center width-col-1 excel">
+                      <span class="element-list-mobile-label visible-xs">Contrato</span><input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
+							<label for="mask-data" class="check only-check"></label>
+                    </div>
+                    <div class="element-list-cell align-middle text-align-center width-col-2">
+                      <span class="element-list-mobile-label visible-xs">Descripción</span> Emilio Perales
+                    </div>
+                    <div class="element-list-cell align-middle text-align-center grey width-col-2">
+                      <span class="element-list-mobile-label visible-xs">Fecha de envío</span> 2348792027319183
+                    </div>
+                    <div class="element-list-cell align-middle text-align-center width-col-2">
+                      <span class="element-list-mobile-label visible-xs">Cuenta</span>
+                      ES2348792027319183
+                    </div>
+                     <div class="element-list-cell align-middle text-align-center width-col-2">
+                      <span class="element-list-mobile-label visible-xs">Concepto</span>
+                      ES2348792027319183
+                    </div>
+                     <div class="element-list-cell align-middle text-align-center width-col-2">
+                      <span class="element-list-mobile-label visible-xs">Importe</span>
+                      ES2348792027319183
+                    </div>
+                    
+                    <div class="element-list-cell align-middle text-align-right width-col-1">
+                      <span class="element-list-mobile-label visible-xs"></span>
+                      <div class="icons-container">
+  											<a href="grs-alta-cliente.html">
+  												<img src="images/arrow1.png">
+  											</a>
+                                            <a href="#">
+  												<i class="icon-download hidden-xs" data-action="download" style="font-size: 1.3em;margin-top: 4px;float: right;"></i>
+  											</a>
+  									  </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="element-list-details-container">
+                    <div class="element-list-details">
+                      <i class="icon-close close-action"></i>
+                      <div class="details-content">
+                        <div class="label-value">
+                          <span class="label">Cliente</span>
+                          <span class="value">Emilio Perales</span>
+                        </div>
+                        <div class="label-value">
+                          <span class="label">Referencia cliente</span>
+                          <span class="value">2348792027319183</span>
+                        </div>
+                        <div class="label-value">
+                          <span class="label">Cuenta</span>
+                          <span class="value">ES2348792027319183</span>
+                        </div>
+                        <div class="label-value">
+                          <span class="label">Domicilio</span>
+                          <span class="value">Avenida El pilar, 45</span>
+                        </div>
+                        <div class="label-value">
+                         <div class="col-md-2">
+                          <a href="#" class="btn-action" style="margin-left:-20px; margin-top:5px;">Editar recibo</a>
+                        </div>
+                         </div>
+                        
+                       
+                        
+
+                      </div>
+                    </div>
+                    
+                    
+                  </div>
+
+                </div>	
+
+      
+      
                   
                      
                   </div>
                 </div>
                 
+                
+                 <div class="seccion">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-10 col-md-offset-1">
+                        <div class="operations-list-buttons swiper-no-swiping">
+                          <div class="row related-operations-buttons">
+
+                            <div class="col-md-4 button-container">
+                              <a href="#" class="btn-outline operation-button personalizado">Guardar selección</a>
+                            </div>
+                            
+                             <div class="col-md-4 button-container">
+                              <a href="#" class="btn-outline operation-button personalizado">Borrar seleccionados</a>
+                            </div>
+
+                            <div class="col-md-4 button-container">
+                              <a href="grs-alta-cliente.html" class="btn-outline operation-button btn-action personalizado">Emitir fichero</a>
+                            </div>
+
+                           
+
+                            
+                          </div>
+
+                         
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                
             </div>
+                </div>
+               
+
             <div class="swiper-slide" data-hash="operaciones">
               <div class="panel-cuentas section" data-anchor="operaciones">
 

@@ -1,0 +1,88 @@
+input.contratos-checkbox {
+  height: 14px;
+}
+
+
+
+.info-error {
+  font-size: 1.7em;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.icon-folder:before {
+  content: '\e800'; }
+
+.icon-upload:before {
+    content: '\e804'; }
+
+
+div.seleccionado {
+  background: #dad9d9;
+  text-align: center;
+  padding: 15px;
+}
+
+div.seleccionado h3 {
+  margin: 0;
+  padding: 0;
+  font-family: "Oblik";
+  font-weight: 300;
+  color: #234473;
+}
+
+div.container .operation-title-button.back-button {
+    font-size: 32px;
+    font-size: 2rem;
+    left: 15px;
+    top: 0;
+}
+
+div.container .operation-title-button {
+    position: absolute;
+    color: #ffffff;
+}
+
+div.icon-contratos {
+  position: absolute;
+  background: url('../images/icon-cuadernos.png');
+  width: 32px;
+  height: 30px;
+  margin-top: 250px;
+  cursor: pointer;
+}
+
+.iban {    
+	text-align: center;
+    color: #398CBF;
+    font-size: 16px;}
+.separar {margin-top:50px;}	
+.separar1 {margin-top:20px;}
+.scroll-vertical {overflow-y: scroll;max-height: 553px;}
+.excel-cuentas {    height: 35px !important;
+    min-height: inherit !important;
+    width: 50px;
+ }
+.element-list-cell.align-middle.text-align-center.width-col-2.excel, .element-list-cell.align-middle.text-align-center.width-col-1.excel, .element-list-cell.text-align-center.width-col-1.excel   { text-align: left;
+    margin-left: -89px;
+    position: absolute;
+	margin-top: 6px;}
+.success-details
+ {    text-align: center;
+    color: #87898C;
+ }
+ .flecha1 {margin-top:200px !important;} 
+ .flecha {display: block;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+ }
+.informame {    margin-top: -50px;
+    position: absolute;
+    font-size: 25px;
+    margin-left: 515px;
+}
+.personalizado {padding:10px 15px !important;}
+ 
