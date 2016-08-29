@@ -364,6 +364,23 @@
                     </div>
                   </div>
                 </div>
+                
+                <a name="anchor-warning1"></a>
+                <div class="seccion alert-grey warning1" >
+              	  <div style="position: absolute; right: 20px; top: 20px;"><i class="icon-close" onclick="$('.warning1').hide();"></i></div>
+                  
+                  <div class="container">
+                  
+                	<table style="width: auto; margin: auto;">
+                      <tr>
+                        <td><i class="success-icon icon-aviso" style="font-size: 5em;"></i></td>
+                        <td>Existen documentos con errores o incompletos que no pueden emitirse. <br/> Por favor, revíselo.</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                
+                
                 <div class="list-elements-component no-border-top">
                   <div class="element-list-row header-list">
                     <div class="element-list-summary-container">
@@ -826,6 +843,17 @@
                   
                 </div>
               </div>
+              
+              <div class="seccion alert-grey delete-confirm" >
+              	<div class="container">
+                <div class="delete-message-container" >
+                        <div class="message">
+                          <div class="message-cell" style="text-align: center;"> <span>¿Seguro que quieres eliminar los elementos seleccionados?</span> <i class="accept icon-check2"></i> <i class="cancel icon-cancel"></i> </div>
+                        </div>
+                      </div></div>
+              </div>
+              
+              
               <div class="seccion">
                 <div class="container">
                   <div class="row">
@@ -833,8 +861,8 @@
                       <div class="operations-list-buttons swiper-no-swiping">
                         <div class="row related-operations-buttons">
                           <div class="col-md-4 button-container"> <a href="#" class="btn-outline personalizado">Guardar selección</a> </div>
-                          <div class="col-md-4 button-container"> <a href="#" class="btn-outline personalizado">Borrar seleccionados</a> </div>
-                          <div class="col-md-4 button-container"> <a href="grs-alta-cliente.html" class="btn-outline btn-action personalizado">Emitir fichero</a> </div>
+                          <div class="col-md-4 button-container"> <a href="javascript: $('.delete-confirm').show();" class="btn-outline personalizado">Borrar seleccionados</a> </div>
+                          <div class="col-md-4 button-container"> <a href="#anchor-warning1" onclick="$('.warning1').show();" class="btn-outline btn-action personalizado">Emitir fichero</a> </div>
                         </div>
                       </div>
                     </div>

@@ -84,4 +84,31 @@ div.icon-contratos {
     font-size: 25px;
     margin-left: 515px;
 }
+
+.alert-grey {
+  margin-top: 20px;
+  display: none;
+  background: #F2F2F2; 
+  padding: 50px;
+  text-align: center;
+  position: relative;
+  color: grey;
+  font-weight: 100;
+}
+
+.alert-grey .icon-close {
+  cursor: pointer;
+}
+
+.delete-confirm i.accept {
+  color: green; 
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+.delete-confirm i.cancel {
+  color: #4D98C5; 
+  font-size: 1.3em;
+  cursor: pointer;
+}
  
