@@ -112,3 +112,6 @@ div.icon-contratos {
   cursor: pointer;
 }
  
+.new-group {
+  display: none;
+}

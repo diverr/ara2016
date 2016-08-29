@@ -205,14 +205,50 @@
             <p>Para cambiar los beneficiarios del grupo, seleccione los beneficiarios que quiera añadir o eliminar y pulse los botones &laquo y &raquo; respectivamente. También pued eliminar el actual grupo pulsando el botón <strong>"Eliminar grupo"</strong>.</p>
           </div>
         </div>
+        
+        <script>
+        function changeGroupSelect() {
+		  $(".new-group").hide();
+		  
+		  var select = $("#group-select").val();
+		  if(select === "nuevo") {
+		  	$(".new-group").show();
+		  }
+		}
+        </script>
+        
+        
+        <form class="form-funnel">
         <div class="form-funnel-row">
-          <div class="select-account">
-            <select name="origin-account" data-label="Selecciona el grupo o crea uno nuevo" tabindex="2" required="" aria-required="false">
-              <option data-alias="Grupo1" data-amount="" data-currency="" value="Grupo1">Grupo1</option>
-              <option data-alias="Grupo2" data-amount="" data-currency="" value="Grupo2">Grupo2</option>
-            </select>
-          </div>
-        </div>
+                  <div class="select-single">
+                    <select id="group-select" name="transfer-selector" data-label="Selecciona el grupo o crea uno nuevo" tabindex="3" required="" aria-required="true" onchange="changeGroupSelect();">
+                      
+                      <option value=""></option>
+					  <option value="nuevo"><strong>Crear nuevo Grupo</strong></option>
+                      <option value="2">Grupo 1</option>
+                      <option value="3">Grupo clientes 01</option>
+                      <option value="4">Grupo 02</option>
+                      <option value="5">Grupo clientes 02</option>
+                      
+
+                    </select>
+                  </div>
+                </div>
+                
+                <div class="new-group">
+                <div class="form-funnel-row">
+                  <input type="text" id="group-name" name="group-name" placeholder="Nombre del grupo" maxlength="140" required="" aria-required="true">
+                </div>
+                
+                <div class="row">
+              <div class="col-md-offset-2 col-md-8">
+                <input type="submit" class="btn-action" value="Aceptar" id="btn-aceptar" style="margin-top: 30px;">
+              </div>
+            </div>
+            </div>
+                
+        		</form>
+        
       </div>
     </div>
     <div class="container">
