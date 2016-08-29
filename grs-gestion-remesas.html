@@ -239,45 +239,13 @@
               <div class="element-list-summary-container">
                 <form class="create-form new-element-container">
                   <div class="edit-form horizontal-form">
-                    <div class="width-col-2">
-                      <div class="select-simple">
-                        <select name="index-select" required>
-                          <option value="">Índices</option>
-                          <option value="MC">Mercado contínuo</option>
-                          <option value="DW">Dow Jones 30</option>
-                          <option value="DW">Ibex 35</option>
-                        </select>
-                      </div>
+                    
+                    
+                    <div class="width-col-3">
+                      <input type="text" name="expiration-input" placeholder="Importe del recibo" required>
                     </div>
-                    <div class="width-col-2">
-                      <div class="select-simple">
-                        <select name="value-select" required>
-                          <option value="">Valor</option>
-                          <option value="BBVA">BBVA</option>
-                          <option value="COKE">Coca-Cola CO</option>
-                          <option value="BS">Banco Santander</option>
-                          <option value="APP">Apple</option>
-                          <option value="IND">Inditex</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="width-col-1">
-                      <input type="text" name="price-input" placeholder="Precio" required>
-                    </div>
-                    <div class="width-col-2">
-                      <div class="select-simple">
-                        <select name="condition-select" required>
-                          <option value="">Condición</option>
-                          <option value="MAX">Mayor o igual</option>
-                          <option value="MIN">Menor o igual</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="width-col-2">
-                      <input type="text" name="expiration-input" placeholder="Caducidad" required>
-                    </div>
-                    <div class="width-col-2">
-                      <input type="text" name="additional-input" placeholder="Texto adicional" required>
+                    <div class="width-col-8">
+                      <input type="text" name="additional-input" placeholder="Concepto" required>
                     </div>
                     <div class="width-col-1 align-right form-icons"> <i class="accept icon-check2"></i> <i class="cancel icon-cancel"></i> </div>
                   </div>
@@ -302,31 +270,9 @@
                             <button type="submit" class="with-icon"> <i class="icon-search"></i> </button>
                           </div>
                         </form>
-                        <div class="icon-options"> <i class="icon-editar hidden-xs" style="font-size:1.3em;"></i> Modificación masiva 
-                          <!-- 
-                        <i class="icon-send hidden-xs" data-action="send"></i>
-                        <i class="icon-download hidden-xs" data-action="download" style="font-size: 1.3em;"></i>
-                        <label id="icon-options-label" class="error align-right one-line hide">Se supera el límite de documentos a exportar</label>
-                        --> 
-                        </div>
-                        <div class="popups-forms">
-                          <div class="popup-info download hide">
-                            <div class="popup-wrapper">
-                              <p>Exportar a PDF</p>
-                              <p>Exportar a Excel</p>
-                            </div>
-                          </div>
-                          <div class="popup-info send hide">
-                            <div class="popup-wrapper align-center">
-                              <form action="" method="post">
-                                <div class="relative">
-                                  <input type="email" name="email-popup-form-imput" id="email-popup-form-imput" placeholder="Dirección de correo" class="align-center" value="j*****@gmail.com" required>
-                                </div>
-                                <input type="submit" id="submit-send-popup-search" class="btn-action small-margin-top" value="Enviar">
-                              </form>
-                            </div>
-                          </div>
-                        </div>
+                        
+                        
+                        
                       </div>
                       <div class="list-search-options-row clearfix">
                         <div class="advanced-search">
@@ -334,13 +280,10 @@
                           <div class="form-container advanced-form hide">
                             <form action="#" method="post" id="advanced-search-form">
                               <div class="row">
-                                <div class="col-md-4 input-with-amount">
-                                  <input type="text" value="" placeholder="Nombre cliente" name="min-amount" validation-amount-less-than="max-amount">
-                                </div>
-                                <div class="col-md-4 input-with-amount">
+                                <div class="col-md-3 input-with-amount">
                                   <input type="text" value="" placeholder="Referencia" name="max-amount" validation-amount-greater-than="min-amount">
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                   <div class="select-simple select-date-range">
                                     <select name="date-range">
                                       <option value="">Cuenta</option>
@@ -352,6 +295,12 @@
                                       <option value="5">Pagos confirming</option>
                                     </select>
                                   </div>
+                                </div>
+                                <div class="col-md-3 input-with-amount">
+                                  <input type="text" value="" placeholder="Concepto" name="min-amount" >
+                                </div>
+                                <div class="col-md-3 input-with-amount">
+                                  <input type="text" value="" placeholder="Importe" name="min-amount" >
                                 </div>
                               </div>
                               <div class="row">
