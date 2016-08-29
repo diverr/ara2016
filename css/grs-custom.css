@@ -100,13 +100,13 @@ div.icon-contratos {
   cursor: pointer;
 }
 
-.delete-confirm i.accept {
+.alert-grey i.accept {
   color: green; 
   font-size: 1.3em;
   cursor: pointer;
 }
 
-.delete-confirm i.cancel {
+.alert-grey i.cancel {
   color: #4D98C5; 
   font-size: 1.3em;
   cursor: pointer;

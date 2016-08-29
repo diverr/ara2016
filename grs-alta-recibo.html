@@ -376,7 +376,7 @@
 
       <section class="seccion">
         <div class="container">
-          <form action="grs-alta-recibo-exito.html" method="post" class="form-funnel" id="loginForm">
+          <form action="grs-alta-recibo-exito.html" method="post" class="form-funnel" id="ff1">
 
             <div class="row">
               <div class="col-md-offset-3 col-md-6">
@@ -473,11 +473,22 @@
                
 
 
-
+			<div class="seccion alert-grey warning1" style="padding: 10px; width: 100%;">
+              	  <div class="" style="padding: 20px;">
+                  
+                	<table style="width: auto; margin: auto;">
+                      <tr>
+                        <td><i class="success-icon icon-aviso" style="font-size: 3em;"></i></td>
+                        <td>¿Deseas aplicar también las modificaciones realizadas sobre el cliente a todos sus documentos asociados?</td>
+                        <td style="width: 60px"><i class="accept icon-check2" onclick="$('#ff1').submit();"></i> <i class="cancel icon-cancel" onclick="$('.warning1').hide(); $('.btn-action').show()"></i></td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
 
             <div class="row">
               <div class="col-lg-offset-4 col-lg-4 col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6">
-                <input type="submit" class="btn-action" value="Continuar">
+                <input type="button" onclick="$('.warning1').show(); $(this).hide()" class="btn-action" value="Continuar">
               </div>
             </div>
           </form>
