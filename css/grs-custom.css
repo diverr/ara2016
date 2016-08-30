@@ -87,7 +87,7 @@ div.icon-contratos {
 
 .alert-grey {
   margin-top: 20px;
-  display: none;
+  display: block;
   background: #F2F2F2; 
   padding: 50px;
   text-align: center;
@@ -113,5 +113,21 @@ div.icon-contratos {
 }
  
 .new-group {
+  display: none;
+}
+
+.edit-group {
+  display: none;
+}
+
+.edit-group i {
+  cursor: pointer;
+}
+
+.edit-group .delete-confirm {
+  display: none;
+}
+
+.edit-group-name {
   display: none;
 }

@@ -193,10 +193,10 @@
     <a class="operation-title-button close-button" href="#"><i class="icon-close"></i></a> </div>
 </div>
 <div class="seccion no-margin-bottom no-padding-bottom">
-<div class="container">
-  <div class="row">
-    <div class="col-md-offset-3 col-md-6  popup-container">
-      <div class="title-with-info">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-offset-3 col-md-6  popup-container" style="margin-bottom: 100px;">
+        <div class="title-with-info">
         <h2 class="section-title form-block-title">¿Qué grupo? <i class="icon-info popup-trigger"></i></h2>
         <div class="popup-info list-accounts-popup closeable-container hide">
           <div class="popup-wrapper"> <i class="icon-close"></i>
@@ -205,7 +205,6 @@
             <p>Para cambiar los beneficiarios del grupo, seleccione los beneficiarios que quiera añadir o eliminar y pulse los botones &laquo y &raquo; respectivamente. También pued eliminar el actual grupo pulsando el botón <strong>"Eliminar grupo"</strong>.</p>
           </div>
         </div>
-        
         <script>
         function changeGroupSelect() {
 		  $(".new-group").hide();
@@ -213,42 +212,69 @@
 		  var select = $("#group-select").val();
 		  if(select === "nuevo") {
 		  	$(".new-group").show();
+		  } else if(select != "") {
+			  $(".edit-group").show();
 		  }
 		}
         </script>
-        
-        
-        <form class="form-funnel">
-        <div class="form-funnel-row">
-                  <div class="select-single">
-                    <select id="group-select" name="transfer-selector" data-label="Selecciona el grupo o crea uno nuevo" tabindex="3" required="" aria-required="true" onchange="changeGroupSelect();">
-                      
-                      <option value=""></option>
-					  <option value="nuevo"><strong>Crear nuevo Grupo</strong></option>
-                      <option value="2">Grupo 1</option>
-                      <option value="3">Grupo clientes 01</option>
-                      <option value="4">Grupo 02</option>
-                      <option value="5">Grupo clientes 02</option>
-                      
-
-                    </select>
-                  </div>
-                </div>
-                
-                <div class="new-group">
-                <div class="form-funnel-row">
-                  <input type="text" id="group-name" name="group-name" placeholder="Nombre del grupo" maxlength="140" required="" aria-required="true">
-                </div>
-                
-                <div class="row">
+        <form class="form-funnel" >
+          <div class="form-funnel-row">
+            <div class="select-single">
+              <select id="group-select" name="transfer-selector" data-label="Selecciona el grupo o crea uno nuevo" tabindex="3" required="" aria-required="true" onchange="changeGroupSelect();">
+                <option value=""></option>
+                <option value="nuevo"><strong>Crear nuevo Grupo</strong></option>
+                <option value="2">Grupo 1</option>
+                <option value="3">Grupo clientes 01</option>
+                <option value="4">Grupo 02</option>
+                <option value="5">Grupo clientes 02</option>
+              </select>
+            </div>
+          </div>
+          <div class="new-group">
+            <div class="form-funnel-row">
+              <input type="text" id="group-name" name="group-name" placeholder="Nombre del grupo" maxlength="140" required="" aria-required="true">
+            </div>
+            <div class="row">
               <div class="col-md-offset-2 col-md-8">
-                <input type="submit" class="btn-action" value="Aceptar" id="btn-aceptar" style="margin-top: 30px;">
+                <input type="submit" class="btn-action" value="Aceptar" id="btn-aceptar" style="margin-top: 30px;" >
               </div>
             </div>
+          </div>
+          
+          
+          <div class="edit-group">
+            <div class="form-funnel-row show-group-name">
+              <div class="col-md-10"><strong>Grupo Clientes 01</strong></div>
+              <div class="col-md-2" style="font-size: 1.2em;"> <i class="icon-editar" onclick="$('.show-group-name').hide();$('.edit-group-name').show();$('#group-name').focus();"></i>  &nbsp;&nbsp; 
+              <i class="icon-trash-empty" onclick="$('.show-group-name').hide();$('.delete-confirm').show();"></i> </div>
             </div>
-                
-        		</form>
-        
+          
+          
+          <div class="edit-group-name">
+            <div class="row" >
+              <div class="col-md-10"><input type="text" id="group-name" name="group-name" placeholder="Nombre del grupo" maxlength="140" required="" aria-required="true" value="Grupo clientes 01"></div>
+              <div class="col-md-2" style="font-size: 1.7em; padding-top: 20px;"> <i class="icon-check2" onclick="$('.edit-group-name').hide();$('.show-group-name').show();$('.edit-group').hide();"></i> <i class="icon-cancel" onclick="$('.edit-group-name').hide();$('.show-group-name').show();$('.edit-group').hide();"></i> </div>
+            
+              
+            </div>
+            
+          </div>
+          
+          
+          <div class="alert-grey delete-confirm" >
+              	<div class="">
+                <div class="delete-message-container" >
+                        <div class="message row">
+                          <div class="col-md-2"><i class="success-icon icon-aviso" style="font-size: 3em;"></i></div>
+                          <div class="col-md-8"><div class="message-cell" style="text-align: center;"> Va a eliminar el grupo <strong>Grupo clientes 01</strong> <br> ¿Está seguro de querer continuar? </div></div>
+                          <div class="col-md-2"><i class="accept icon-check2" onclick="$('.delete-confirm').hide();$('.show-group-name').show();$('.edit-group').hide();"></i> <i class="cancel icon-cancel" onclick="$('.delete-confirm').hide();$('.show-group-name').show();$('.edit-group').hide();"></i></div>
+                        </div>
+                      </div></div>
+              </div>
+          
+          
+          </div>
+        </form>
       </div>
     </div>
     <div class="container">
