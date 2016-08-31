@@ -87,7 +87,7 @@ div.icon-contratos {
 
 .alert-grey {
   margin-top: 20px;
-  display: block;
+  display: none;
   background: #F2F2F2; 
   padding: 50px;
   text-align: center;
