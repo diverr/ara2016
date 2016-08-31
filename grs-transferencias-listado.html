@@ -242,7 +242,7 @@
                     
                     
                     <div class="width-col-3">
-                      <input type="text" name="expiration-input" placeholder="Importe del recibo" required>
+                      <input type="text" name="expiration-input" placeholder="Importe de la transferencia" required>
                     </div>
                     <div class="width-col-8">
                       <input type="text" name="additional-input" placeholder="Concepto" required>
@@ -405,10 +405,10 @@
                         <input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
                         <label for="mask-data" class="check only-check"></label>
                       </div>
-                      <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Descripción</span> Emilio Perales </div>
-                      <div class="element-list-cell align-middle text-align-center grey width-col-2"> <span class="element-list-mobile-label visible-xs">Fecha de envío</span> 2348792027319183 </div>
+                      <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Nombre cliente</span> MARGARITA CASTA </div>
+                      <div class="element-list-cell align-middle text-align-center grey width-col-2"> <span class="element-list-mobile-label visible-xs">Referencia cliente</span> 2348792027319183 </div>
                       <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Cuenta</span> ES2348792027319183 </div>
-                      <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Concepto</span> ES2348792027319183 </div>
+                      <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Concepto</span> TRANSFERENCIA: 003265 </div>
                       <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Importe</span> 66,00 <span class="currency">EUR</span> </div>
                       <div class="element-list-cell align-middle text-align-right width-col-1"><i class="icon-info info-error error-listado"></i></div>
                       <div class="element-list-cell align-middle text-align-right width-col-1"> <span class="element-list-mobile-label visible-xs"></span>
@@ -429,7 +429,7 @@
                       	  </div>
                           
                           <div class="width-col-2">
-                            Emilio Perales
+                            MARGARITA CASTA
                           </div>
                           
                           <div class="width-col-2">
@@ -441,7 +441,7 @@
                           </div>
                           
                           <div class="width-col-2">
-                            <input type="text" name="concepto-input" value="ES2348792027319183" placeholder="Concepto" required>
+                            <input type="text" name="concepto-input" value="TRANSFERENCIA: 003265" placeholder="Concepto" required>
                           </div>
                           
                           <div class="width-col-2">
@@ -462,12 +462,87 @@
                     <div class="element-list-details-container">
                       <div class="element-list-details"> <i class="icon-close close-action"></i>
                         <div class="details-content">
-                          <div class="label-value"> <span class="label">Cliente</span> <span class="value">Emilio Perales</span> </div>
+                          <div class="label-value"> <span class="label">Cliente</span> <span class="value">MARGARITA CASTA</span> </div>
                           <div class="label-value"> <span class="label">Referencia cliente</span> <span class="value">2348792027319183</span> </div>
                           <div class="label-value"> <span class="label">Cuenta</span> <span class="value">ES2348792027319183</span> </div>
                           <div class="label-value"> <span class="label">Domicilio</span> <span class="value">Avenida El pilar, 45</span> </div>
                           <div class="label-value">
-                            <div class="col-md-2"> <a href="#" class="btn-action" style="margin-left:-20px; margin-top:5px;">Editar recibo completo</a> </div>
+                            <div class="col-md-2"> <a href="#" class="btn-action" style="margin-left:-20px; margin-top:5px;">Editar transferencia completa</a> </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="element-list-row with-details">
+                    <div class="element-list-summary-container">
+                      <div class="element-list-cell align-middle text-align-center width-col-1 excel"> <span class="element-list-mobile-label visible-xs">Contrato</span>
+                        <input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
+                        <label for="mask-data" class="check only-check"></label>
+                      </div>
+                      <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Nombre cliente</span> MARGARITA CASTA </div>
+                      <div class="element-list-cell align-middle text-align-center grey width-col-2"> <span class="element-list-mobile-label visible-xs">Referencia cliente</span> 2348792027319183 </div>
+                      <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Cuenta</span> ES2348792027319183 </div>
+                      <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Concepto</span> TRANSFERENCIA: 003265 </div>
+                      <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Importe</span> 66,00 <span class="currency">EUR</span> </div>
+                      <div class="element-list-cell align-middle text-align-right width-col-1"><i class="icon-info info-error error-listado"></i></div>
+                      <div class="element-list-cell align-middle text-align-right width-col-1"> <span class="element-list-mobile-label visible-xs"></span>
+                        <div class="icons-container"> <i class="icon-editar edit-action"></i> <i class="icon-trash-empty delete-action"></i> </div>
+                      </div>
+                      <div class="delete-message-container">
+                        <div class="message">
+                          <div class="message-cell"> <span>¿Seguro que quieres eliminar esta alerta?</span> <i class="accept icon-check2"></i> <i class="cancel icon-cancel"></i> </div>
+                        </div>
+                      </div>
+                     
+                     
+                     
+                      <div class="edit-element-container">
+                        <form class="edit-form horizontal-form">
+                          
+                          <div class="width-col-1"> 
+                      	  </div>
+                          
+                          <div class="width-col-2">
+                            MARGARITA CASTA
+                          </div>
+                          
+                          <div class="width-col-2">
+                            2348792027319183
+                          </div>
+                          
+                          <div class="width-col-2">
+                            ES2348792027319183
+                          </div>
+                          
+                          <div class="width-col-2">
+                            <input type="text" name="concepto-input" value="TRANSFERENCIA: 003265" placeholder="Concepto" required>
+                          </div>
+                          
+                          <div class="width-col-2">
+                            <input type="text" name="price-input" value="66,00" placeholder="Importe" required>
+                          </div>
+                          
+                          <div class="width-col-1 align-right form-icons"> <i class="accept icon-check2"></i> <i class="cancel icon-cancel"></i> </div>
+                        </form>
+                      </div>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                    </div>
+                    <div class="element-list-details-container">
+                      <div class="element-list-details"> <i class="icon-close close-action"></i>
+                        <div class="details-content">
+                          <div class="label-value"> <span class="label">Cliente</span> <span class="value">MARGARITA CASTA</span> </div>
+                          <div class="label-value"> <span class="label">Referencia cliente</span> <span class="value">2348792027319183</span> </div>
+                          <div class="label-value"> <span class="label">Cuenta</span> <span class="value">ES2348792027319183</span> </div>
+                          <div class="label-value"> <span class="label">Domicilio</span> <span class="value">Avenida El pilar, 45</span> </div>
+                          <div class="label-value">
+                            <div class="col-md-2"> <a href="#" class="btn-action" style="margin-left:-20px; margin-top:5px;">Editar transferencia completa</a> </div>
                           </div>
                         </div>
                       </div>
@@ -479,10 +554,10 @@
                         <input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
                         <label for="mask-data" class="check only-check"></label>
                       </div>
-                      <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Descripción</span> Emilio Perales </div>
-                      <div class="element-list-cell align-middle text-align-center grey width-col-2"> <span class="element-list-mobile-label visible-xs">Fecha de envío</span> 2348792027319183 </div>
+                      <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Nombre cliente</span> MARGARITA CASTA </div>
+                      <div class="element-list-cell align-middle text-align-center grey width-col-2"> <span class="element-list-mobile-label visible-xs">Referencia cliente</span> 2348792027319183 </div>
                       <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Cuenta</span> ES2348792027319183 </div>
-                      <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Concepto</span> ES2348792027319183 </div>
+                      <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Concepto</span> TRANSFERENCIA: 003265 </div>
                       <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Importe</span> 66,00 <span class="currency">EUR</span> </div>
                       <div class="element-list-cell align-middle text-align-right width-col-1"><i class="icon-info info-error error-listado"></i></div>
                       <div class="element-list-cell align-middle text-align-right width-col-1"> <span class="element-list-mobile-label visible-xs"></span>
@@ -503,7 +578,7 @@
                       	  </div>
                           
                           <div class="width-col-2">
-                            Emilio Perales
+                            MARGARITA CASTA
                           </div>
                           
                           <div class="width-col-2">
@@ -515,7 +590,7 @@
                           </div>
                           
                           <div class="width-col-2">
-                            <input type="text" name="concepto-input" value="ES2348792027319183" placeholder="Concepto" required>
+                            <input type="text" name="concepto-input" value="TRANSFERENCIA: 003265" placeholder="Concepto" required>
                           </div>
                           
                           <div class="width-col-2">
@@ -536,12 +611,12 @@
                     <div class="element-list-details-container">
                       <div class="element-list-details"> <i class="icon-close close-action"></i>
                         <div class="details-content">
-                          <div class="label-value"> <span class="label">Cliente</span> <span class="value">Emilio Perales</span> </div>
+                          <div class="label-value"> <span class="label">Cliente</span> <span class="value">MARGARITA CASTA</span> </div>
                           <div class="label-value"> <span class="label">Referencia cliente</span> <span class="value">2348792027319183</span> </div>
                           <div class="label-value"> <span class="label">Cuenta</span> <span class="value">ES2348792027319183</span> </div>
                           <div class="label-value"> <span class="label">Domicilio</span> <span class="value">Avenida El pilar, 45</span> </div>
                           <div class="label-value">
-                            <div class="col-md-2"> <a href="#" class="btn-action" style="margin-left:-20px; margin-top:5px;">Editar recibo completo</a> </div>
+                            <div class="col-md-2"> <a href="#" class="btn-action" style="margin-left:-20px; margin-top:5px;">Editar transferencia completa</a> </div>
                           </div>
                         </div>
                       </div>
@@ -553,10 +628,10 @@
                         <input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
                         <label for="mask-data" class="check only-check"></label>
                       </div>
-                      <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Descripción</span> Emilio Perales </div>
-                      <div class="element-list-cell align-middle text-align-center grey width-col-2"> <span class="element-list-mobile-label visible-xs">Fecha de envío</span> 2348792027319183 </div>
+                      <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Nombre cliente</span> MARGARITA CASTA </div>
+                      <div class="element-list-cell align-middle text-align-center grey width-col-2"> <span class="element-list-mobile-label visible-xs">Referencia cliente</span> 2348792027319183 </div>
                       <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Cuenta</span> ES2348792027319183 </div>
-                      <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Concepto</span> ES2348792027319183 </div>
+                      <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Concepto</span> TRANSFERENCIA: 003265 </div>
                       <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Importe</span> 66,00 <span class="currency">EUR</span> </div>
                       <div class="element-list-cell align-middle text-align-right width-col-1"><i class="icon-info info-error error-listado"></i></div>
                       <div class="element-list-cell align-middle text-align-right width-col-1"> <span class="element-list-mobile-label visible-xs"></span>
@@ -577,7 +652,7 @@
                       	  </div>
                           
                           <div class="width-col-2">
-                            Emilio Perales
+                            MARGARITA CASTA
                           </div>
                           
                           <div class="width-col-2">
@@ -589,7 +664,7 @@
                           </div>
                           
                           <div class="width-col-2">
-                            <input type="text" name="concepto-input" value="ES2348792027319183" placeholder="Concepto" required>
+                            <input type="text" name="concepto-input" value="TRANSFERENCIA: 003265" placeholder="Concepto" required>
                           </div>
                           
                           <div class="width-col-2">
@@ -610,12 +685,12 @@
                     <div class="element-list-details-container">
                       <div class="element-list-details"> <i class="icon-close close-action"></i>
                         <div class="details-content">
-                          <div class="label-value"> <span class="label">Cliente</span> <span class="value">Emilio Perales</span> </div>
+                          <div class="label-value"> <span class="label">Cliente</span> <span class="value">MARGARITA CASTA</span> </div>
                           <div class="label-value"> <span class="label">Referencia cliente</span> <span class="value">2348792027319183</span> </div>
                           <div class="label-value"> <span class="label">Cuenta</span> <span class="value">ES2348792027319183</span> </div>
                           <div class="label-value"> <span class="label">Domicilio</span> <span class="value">Avenida El pilar, 45</span> </div>
                           <div class="label-value">
-                            <div class="col-md-2"> <a href="#" class="btn-action" style="margin-left:-20px; margin-top:5px;">Editar recibo completo</a> </div>
+                            <div class="col-md-2"> <a href="#" class="btn-action" style="margin-left:-20px; margin-top:5px;">Editar transferencia completa</a> </div>
                           </div>
                         </div>
                       </div>
@@ -627,10 +702,10 @@
                         <input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
                         <label for="mask-data" class="check only-check"></label>
                       </div>
-                      <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Descripción</span> Emilio Perales </div>
-                      <div class="element-list-cell align-middle text-align-center grey width-col-2"> <span class="element-list-mobile-label visible-xs">Fecha de envío</span> 2348792027319183 </div>
+                      <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Nombre cliente</span> MARGARITA CASTA </div>
+                      <div class="element-list-cell align-middle text-align-center grey width-col-2"> <span class="element-list-mobile-label visible-xs">Referencia cliente</span> 2348792027319183 </div>
                       <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Cuenta</span> ES2348792027319183 </div>
-                      <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Concepto</span> ES2348792027319183 </div>
+                      <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Concepto</span> TRANSFERENCIA: 003265 </div>
                       <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Importe</span> 66,00 <span class="currency">EUR</span> </div>
                       <div class="element-list-cell align-middle text-align-right width-col-1"><i class="icon-info info-error error-listado"></i></div>
                       <div class="element-list-cell align-middle text-align-right width-col-1"> <span class="element-list-mobile-label visible-xs"></span>
@@ -651,7 +726,7 @@
                       	  </div>
                           
                           <div class="width-col-2">
-                            Emilio Perales
+                            MARGARITA CASTA
                           </div>
                           
                           <div class="width-col-2">
@@ -663,7 +738,7 @@
                           </div>
                           
                           <div class="width-col-2">
-                            <input type="text" name="concepto-input" value="ES2348792027319183" placeholder="Concepto" required>
+                            <input type="text" name="concepto-input" value="TRANSFERENCIA: 003265" placeholder="Concepto" required>
                           </div>
                           
                           <div class="width-col-2">
@@ -684,12 +759,12 @@
                     <div class="element-list-details-container">
                       <div class="element-list-details"> <i class="icon-close close-action"></i>
                         <div class="details-content">
-                          <div class="label-value"> <span class="label">Cliente</span> <span class="value">Emilio Perales</span> </div>
+                          <div class="label-value"> <span class="label">Cliente</span> <span class="value">MARGARITA CASTA</span> </div>
                           <div class="label-value"> <span class="label">Referencia cliente</span> <span class="value">2348792027319183</span> </div>
                           <div class="label-value"> <span class="label">Cuenta</span> <span class="value">ES2348792027319183</span> </div>
                           <div class="label-value"> <span class="label">Domicilio</span> <span class="value">Avenida El pilar, 45</span> </div>
                           <div class="label-value">
-                            <div class="col-md-2"> <a href="#" class="btn-action" style="margin-left:-20px; margin-top:5px;">Editar recibo completo</a> </div>
+                            <div class="col-md-2"> <a href="#" class="btn-action" style="margin-left:-20px; margin-top:5px;">Editar transferencia completa</a> </div>
                           </div>
                         </div>
                       </div>
@@ -701,10 +776,10 @@
                         <input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
                         <label for="mask-data" class="check only-check"></label>
                       </div>
-                      <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Descripción</span> Emilio Perales </div>
-                      <div class="element-list-cell align-middle text-align-center grey width-col-2"> <span class="element-list-mobile-label visible-xs">Fecha de envío</span> 2348792027319183 </div>
+                      <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Nombre cliente</span> MARGARITA CASTA </div>
+                      <div class="element-list-cell align-middle text-align-center grey width-col-2"> <span class="element-list-mobile-label visible-xs">Referencia cliente</span> 2348792027319183 </div>
                       <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Cuenta</span> ES2348792027319183 </div>
-                      <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Concepto</span> ES2348792027319183 </div>
+                      <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Concepto</span> TRANSFERENCIA: 003265 </div>
                       <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Importe</span> 66,00 <span class="currency">EUR</span> </div>
                       <div class="element-list-cell align-middle text-align-right width-col-1"><i class="icon-info info-error error-listado"></i></div>
                       <div class="element-list-cell align-middle text-align-right width-col-1"> <span class="element-list-mobile-label visible-xs"></span>
@@ -725,7 +800,7 @@
                       	  </div>
                           
                           <div class="width-col-2">
-                            Emilio Perales
+                            MARGARITA CASTA
                           </div>
                           
                           <div class="width-col-2">
@@ -737,7 +812,7 @@
                           </div>
                           
                           <div class="width-col-2">
-                            <input type="text" name="concepto-input" value="ES2348792027319183" placeholder="Concepto" required>
+                            <input type="text" name="concepto-input" value="TRANSFERENCIA: 003265" placeholder="Concepto" required>
                           </div>
                           
                           <div class="width-col-2">
@@ -758,12 +833,12 @@
                     <div class="element-list-details-container">
                       <div class="element-list-details"> <i class="icon-close close-action"></i>
                         <div class="details-content">
-                          <div class="label-value"> <span class="label">Cliente</span> <span class="value">Emilio Perales</span> </div>
+                          <div class="label-value"> <span class="label">Cliente</span> <span class="value">MARGARITA CASTA</span> </div>
                           <div class="label-value"> <span class="label">Referencia cliente</span> <span class="value">2348792027319183</span> </div>
                           <div class="label-value"> <span class="label">Cuenta</span> <span class="value">ES2348792027319183</span> </div>
                           <div class="label-value"> <span class="label">Domicilio</span> <span class="value">Avenida El pilar, 45</span> </div>
                           <div class="label-value">
-                            <div class="col-md-2"> <a href="#" class="btn-action" style="margin-left:-20px; margin-top:5px;">Editar recibo completo</a> </div>
+                            <div class="col-md-2"> <a href="#" class="btn-action" style="margin-left:-20px; margin-top:5px;">Editar transferencia completa</a> </div>
                           </div>
                         </div>
                       </div>
@@ -775,10 +850,10 @@
                         <input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
                         <label for="mask-data" class="check only-check"></label>
                       </div>
-                      <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Descripción</span> Emilio Perales </div>
-                      <div class="element-list-cell align-middle text-align-center grey width-col-2"> <span class="element-list-mobile-label visible-xs">Fecha de envío</span> 2348792027319183 </div>
+                      <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Nombre cliente</span> MARGARITA CASTA </div>
+                      <div class="element-list-cell align-middle text-align-center grey width-col-2"> <span class="element-list-mobile-label visible-xs">Referencia cliente</span> 2348792027319183 </div>
                       <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Cuenta</span> ES2348792027319183 </div>
-                      <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Concepto</span> ES2348792027319183 </div>
+                      <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Concepto</span> TRANSFERENCIA: 003265 </div>
                       <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Importe</span> 66,00 <span class="currency">EUR</span> </div>
                       <div class="element-list-cell align-middle text-align-right width-col-1"><i class="icon-info info-error error-listado"></i></div>
                       <div class="element-list-cell align-middle text-align-right width-col-1"> <span class="element-list-mobile-label visible-xs"></span>
@@ -799,7 +874,7 @@
                       	  </div>
                           
                           <div class="width-col-2">
-                            Emilio Perales
+                            MARGARITA CASTA
                           </div>
                           
                           <div class="width-col-2">
@@ -811,7 +886,7 @@
                           </div>
                           
                           <div class="width-col-2">
-                            <input type="text" name="concepto-input" value="ES2348792027319183" placeholder="Concepto" required>
+                            <input type="text" name="concepto-input" value="TRANSFERENCIA: 003265" placeholder="Concepto" required>
                           </div>
                           
                           <div class="width-col-2">
@@ -832,12 +907,12 @@
                     <div class="element-list-details-container">
                       <div class="element-list-details"> <i class="icon-close close-action"></i>
                         <div class="details-content">
-                          <div class="label-value"> <span class="label">Cliente</span> <span class="value">Emilio Perales</span> </div>
+                          <div class="label-value"> <span class="label">Cliente</span> <span class="value">MARGARITA CASTA</span> </div>
                           <div class="label-value"> <span class="label">Referencia cliente</span> <span class="value">2348792027319183</span> </div>
                           <div class="label-value"> <span class="label">Cuenta</span> <span class="value">ES2348792027319183</span> </div>
                           <div class="label-value"> <span class="label">Domicilio</span> <span class="value">Avenida El pilar, 45</span> </div>
                           <div class="label-value">
-                            <div class="col-md-2"> <a href="#" class="btn-action" style="margin-left:-20px; margin-top:5px;">Editar recibo completo</a> </div>
+                            <div class="col-md-2"> <a href="#" class="btn-action" style="margin-left:-20px; margin-top:5px;">Editar transferencia completa</a> </div>
                           </div>
                         </div>
                       </div>
@@ -849,10 +924,10 @@
                         <input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
                         <label for="mask-data" class="check only-check"></label>
                       </div>
-                      <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Descripción</span> Emilio Perales </div>
-                      <div class="element-list-cell align-middle text-align-center grey width-col-2"> <span class="element-list-mobile-label visible-xs">Fecha de envío</span> 2348792027319183 </div>
+                      <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Nombre cliente</span> MARGARITA CASTA </div>
+                      <div class="element-list-cell align-middle text-align-center grey width-col-2"> <span class="element-list-mobile-label visible-xs">Referencia cliente</span> 2348792027319183 </div>
                       <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Cuenta</span> ES2348792027319183 </div>
-                      <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Concepto</span> ES2348792027319183 </div>
+                      <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Concepto</span> TRANSFERENCIA: 003265 </div>
                       <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Importe</span> 66,00 <span class="currency">EUR</span> </div>
                       <div class="element-list-cell align-middle text-align-right width-col-1"><i class="icon-info info-error error-listado"></i></div>
                       <div class="element-list-cell align-middle text-align-right width-col-1"> <span class="element-list-mobile-label visible-xs"></span>
@@ -873,7 +948,7 @@
                       	  </div>
                           
                           <div class="width-col-2">
-                            Emilio Perales
+                            MARGARITA CASTA
                           </div>
                           
                           <div class="width-col-2">
@@ -885,7 +960,7 @@
                           </div>
                           
                           <div class="width-col-2">
-                            <input type="text" name="concepto-input" value="ES2348792027319183" placeholder="Concepto" required>
+                            <input type="text" name="concepto-input" value="TRANSFERENCIA: 003265" placeholder="Concepto" required>
                           </div>
                           
                           <div class="width-col-2">
@@ -906,12 +981,12 @@
                     <div class="element-list-details-container">
                       <div class="element-list-details"> <i class="icon-close close-action"></i>
                         <div class="details-content">
-                          <div class="label-value"> <span class="label">Cliente</span> <span class="value">Emilio Perales</span> </div>
+                          <div class="label-value"> <span class="label">Cliente</span> <span class="value">MARGARITA CASTA</span> </div>
                           <div class="label-value"> <span class="label">Referencia cliente</span> <span class="value">2348792027319183</span> </div>
                           <div class="label-value"> <span class="label">Cuenta</span> <span class="value">ES2348792027319183</span> </div>
                           <div class="label-value"> <span class="label">Domicilio</span> <span class="value">Avenida El pilar, 45</span> </div>
                           <div class="label-value">
-                            <div class="col-md-2"> <a href="#" class="btn-action" style="margin-left:-20px; margin-top:5px;">Editar recibo completo</a> </div>
+                            <div class="col-md-2"> <a href="#" class="btn-action" style="margin-left:-20px; margin-top:5px;">Editar transferencia completa</a> </div>
                           </div>
                         </div>
                       </div>
@@ -923,10 +998,10 @@
                         <input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
                         <label for="mask-data" class="check only-check"></label>
                       </div>
-                      <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Descripción</span> Emilio Perales </div>
-                      <div class="element-list-cell align-middle text-align-center grey width-col-2"> <span class="element-list-mobile-label visible-xs">Fecha de envío</span> 2348792027319183 </div>
+                      <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Nombre cliente</span> MARGARITA CASTA </div>
+                      <div class="element-list-cell align-middle text-align-center grey width-col-2"> <span class="element-list-mobile-label visible-xs">Referencia cliente</span> 2348792027319183 </div>
                       <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Cuenta</span> ES2348792027319183 </div>
-                      <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Concepto</span> ES2348792027319183 </div>
+                      <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Concepto</span> TRANSFERENCIA: 003265 </div>
                       <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Importe</span> 66,00 <span class="currency">EUR</span> </div>
                       <div class="element-list-cell align-middle text-align-right width-col-1"><i class="icon-info info-error error-listado"></i></div>
                       <div class="element-list-cell align-middle text-align-right width-col-1"> <span class="element-list-mobile-label visible-xs"></span>
@@ -947,7 +1022,7 @@
                       	  </div>
                           
                           <div class="width-col-2">
-                            Emilio Perales
+                            MARGARITA CASTA
                           </div>
                           
                           <div class="width-col-2">
@@ -959,7 +1034,7 @@
                           </div>
                           
                           <div class="width-col-2">
-                            <input type="text" name="concepto-input" value="ES2348792027319183" placeholder="Concepto" required>
+                            <input type="text" name="concepto-input" value="TRANSFERENCIA: 003265" placeholder="Concepto" required>
                           </div>
                           
                           <div class="width-col-2">
@@ -980,86 +1055,12 @@
                     <div class="element-list-details-container">
                       <div class="element-list-details"> <i class="icon-close close-action"></i>
                         <div class="details-content">
-                          <div class="label-value"> <span class="label">Cliente</span> <span class="value">Emilio Perales</span> </div>
+                          <div class="label-value"> <span class="label">Cliente</span> <span class="value">MARGARITA CASTA</span> </div>
                           <div class="label-value"> <span class="label">Referencia cliente</span> <span class="value">2348792027319183</span> </div>
                           <div class="label-value"> <span class="label">Cuenta</span> <span class="value">ES2348792027319183</span> </div>
                           <div class="label-value"> <span class="label">Domicilio</span> <span class="value">Avenida El pilar, 45</span> </div>
                           <div class="label-value">
-                            <div class="col-md-2"> <a href="#" class="btn-action" style="margin-left:-20px; margin-top:5px;">Editar recibo completo</a> </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="element-list-row with-details">
-                    <div class="element-list-summary-container">
-                      <div class="element-list-cell align-middle text-align-center width-col-1 excel"> <span class="element-list-mobile-label visible-xs">Contrato</span>
-                        <input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
-                        <label for="mask-data" class="check only-check"></label>
-                      </div>
-                      <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Descripción</span> Emilio Perales </div>
-                      <div class="element-list-cell align-middle text-align-center grey width-col-2"> <span class="element-list-mobile-label visible-xs">Fecha de envío</span> 2348792027319183 </div>
-                      <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Cuenta</span> ES2348792027319183 </div>
-                      <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Concepto</span> ES2348792027319183 </div>
-                      <div class="element-list-cell align-middle text-align-center width-col-2"> <span class="element-list-mobile-label visible-xs">Importe</span> 66,00 <span class="currency">EUR</span> </div>
-                      <div class="element-list-cell align-middle text-align-right width-col-1"><i class="icon-info info-error error-listado"></i></div>
-                      <div class="element-list-cell align-middle text-align-right width-col-1"> <span class="element-list-mobile-label visible-xs"></span>
-                        <div class="icons-container"> <i class="icon-editar edit-action"></i> <i class="icon-trash-empty delete-action"></i> </div>
-                      </div>
-                      <div class="delete-message-container">
-                        <div class="message">
-                          <div class="message-cell"> <span>¿Seguro que quieres eliminar esta alerta?</span> <i class="accept icon-check2"></i> <i class="cancel icon-cancel"></i> </div>
-                        </div>
-                      </div>
-                     
-                     
-                     
-                      <div class="edit-element-container">
-                        <form class="edit-form horizontal-form">
-                          
-                          <div class="width-col-1"> 
-                      	  </div>
-                          
-                          <div class="width-col-2">
-                            Emilio Perales
-                          </div>
-                          
-                          <div class="width-col-2">
-                            2348792027319183
-                          </div>
-                          
-                          <div class="width-col-2">
-                            ES2348792027319183
-                          </div>
-                          
-                          <div class="width-col-2">
-                            <input type="text" name="concepto-input" value="ES2348792027319183" placeholder="Concepto" required>
-                          </div>
-                          
-                          <div class="width-col-2">
-                            <input type="text" name="price-input" value="66,00" placeholder="Importe" required>
-                          </div>
-                          
-                          <div class="width-col-1 align-right form-icons"> <i class="accept icon-check2"></i> <i class="cancel icon-cancel"></i> </div>
-                        </form>
-                      </div>
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                    </div>
-                    <div class="element-list-details-container">
-                      <div class="element-list-details"> <i class="icon-close close-action"></i>
-                        <div class="details-content">
-                          <div class="label-value"> <span class="label">Cliente</span> <span class="value">Emilio Perales</span> </div>
-                          <div class="label-value"> <span class="label">Referencia cliente</span> <span class="value">2348792027319183</span> </div>
-                          <div class="label-value"> <span class="label">Cuenta</span> <span class="value">ES2348792027319183</span> </div>
-                          <div class="label-value"> <span class="label">Domicilio</span> <span class="value">Avenida El pilar, 45</span> </div>
-                          <div class="label-value">
-                            <div class="col-md-2"> <a href="#" class="btn-action" style="margin-left:-20px; margin-top:5px;">Editar recibo completo</a> </div>
+                            <div class="col-md-2"> <a href="#" class="btn-action" style="margin-left:-20px; margin-top:5px;">Editar transferencia completa</a> </div>
                           </div>
                         </div>
                       </div>
