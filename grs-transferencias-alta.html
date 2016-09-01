@@ -1,0 +1,612 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/grs-custom.css">
+<title>MoraBanc - Alta transferencia</title>
+<meta charset="utf-8">
+<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="MoraBanc">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+</head>
+
+<body>
+<div class="loading-layer loading-spinner-background">
+  <div class="loading-spinner-wrapper">
+    <div class="sk-three-bounce">
+      <div class="sk-child sk-bounce1"></div>
+      <div class="sk-child sk-bounce2"></div>
+      <div class="sk-child sk-bounce3"></div>
+    </div>
+  </div>
+</div>
+<div class="menu-mobile-layer sb-slidebar sb-width-wide sb-left">
+  <div class="inner-mobile-layer">
+    <div class="search-form">
+      <form action="resultados-busqueda.html" method="post">
+        <i class="icon-search"></i>
+        <input type="search" value="" placeholder="Buscar..." class="search-text">
+      </form>
+    </div>
+    <div class="user-mobile-menu" id="perfil-user-mobile">
+      <div class="perfil-usuario" style="background-image:url('images/usuarios/usuario1-small.jpg')"> </div>
+      <h2 class="tit-user text-elipsis">Joan Capdevilla</h2>
+      <p class="last-login">Últ. acceso 27/09/2015 · 16:35h</p>
+      <i class="icon-right-open"></i> </div>
+    <ul class="navigation-mobile">
+      <li> <a href="cuentas.html" title="Cuentas y Tarjetas" class="active"> <span>Cuentas y Tarjetas</span> </a> </li>
+      <li> <a href="#" title="Ahorro" class=""> <span>Ahorro</span> </a> </li>
+      <li> <a href="inversion.html" title="Inversión" class=""> <span>Inversión</span> </a> </li>
+      <li> <a href="#" title="Financiación" class=""> <span>Financiación</span> </a> </li>
+      <li> <a href="#" title="Seguros" class=""> <span>Seguros</span> </a> </li>
+      <li class="visible-xs"> <a href="contratar.html" title="Contratar" class=""> <span>Contratar</span> </a> </li>
+    </ul>
+    <a href="login.html" class="logout-menu-mobile"><i class="icon-off"></i> Cerrar sesión</a>
+    <div class="layer-menu-usuario">
+      <h2 class="tit-user">
+        <div class="perfil-usuario" style="background-image:url('images/usuarios/usuario1-small.jpg')"></div>
+        <span>Joan Capdevilla</span> <i class="icon-close" id="close-layer-menu-usuario"></i> </h2>
+      <ul class="navigation-mobile">
+        <li> <a href="#" title="Contrato empresa"><i class="icon-menu-usuario"></i>Particular</a>
+          <ul class="submenu">
+            <li><a href="zona-personal.html#configuracion">Configuración</a></li>
+            <li><a href="zona-personal.html#buzon">Buzón</a></li>
+            <li><a href="zona-personal.html#agenda">Agenda</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" title="Contrato privado"><i class="icon-menu-usuario"></i>Negocio</a>
+          <ul class="submenu hided-submenu">
+            <li><a href="#">Configuración</a></li>
+            <li><a href="#">Buzón</a></li>
+            <li><a href="#">Agenda</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" title="Contrato privado"><i class="icon-menu-usuario"></i>EAM</a>
+          <ul class="submenu hided-submenu">
+            <li><a href="#">Configuración</a></li>
+            <li><a href="#">Buzón</a></li>
+            <li><a href="#">Agenda</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="wrapper-header-content visibility-hidden sb-slide">
+  <header class="header container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="visible-xs menu-mobile-trigger sb-toggle-left menu-icon-container header-element"> <i class="icon-menu"></i> </div>
+        <div class="logo-container header-element">
+          <h1 class="logo"> <a href="home.html"> <span>MoraBanc</span> <img src="images/logo-mobile.png" alt="MoraBanc" class="visible-xs" /> <img src="images/logo.png" alt="MoraBanc" class="hidden-xs" /> </a> </h1>
+        </div>
+        <nav class="hidden-xs hidden-sm navigation navigation-container header-element">
+          <ul class="navigation-desktop">
+            <li> <a href="cuentas.html" title="Cuentas y Tarjetas" class="active"> <span>Cuentas y Tarjetas</span> </a> </li>
+            <li> <a href="#" title="Ahorro" class=""> <span>Ahorro</span> </a> </li>
+            <li> <a href="inversion.html" title="Inversión" class=""> <span>Inversión</span> </a> </li>
+            <li> <a href="#" title="Financiación" class=""> <span>Financiación</span> </a> </li>
+            <li> <a href="#" title="Seguros" class=""> <span>Seguros</span> </a> </li>
+            <li class="visible-xs"> <a href="contratar.html" title="Contratar" class=""> <span>Contratar</span> </a> </li>
+          </ul>
+        </nav>
+        <div class="visible-sm icon-header-container navigation header-element">
+          <div class="menu-ipad-trigger"> <a href="#"><i class="navigation-icon-menu icon-menu"></i></a> </div>
+          <div class="navigation-ipad">
+            <ul>
+              <li> <a href="cuentas.html" title="Cuentas y Tarjetas" class="active"> <span>Cuentas y Tarjetas</span> </a> </li>
+              <li> <a href="#" title="Ahorro" class=""> <span>Ahorro</span> </a> </li>
+              <li> <a href="inversion.html" title="Inversión" class=""> <span>Inversión</span> </a> </li>
+              <li> <a href="#" title="Financiación" class=""> <span>Financiación</span> </a> </li>
+              <li> <a href="#" title="Seguros" class=""> <span>Seguros</span> </a> </li>
+              <li class="visible-xs"> <a href="contratar.html" title="Contratar" class=""> <span>Contratar</span> </a> </li>
+            </ul>
+          </div>
+        </div>
+        <div class="hidden-xs icon-header-container header-element"> <a href="contratar.html"><i class="navigation-icon-contract icon-contratar"></i></a> </div>
+        <div class="hidden-xs icon-header-container header-element"> <a href="#"><i id="main-search-trigger" class="navigation-icon-search icon-search"></i></a> </div>
+        <div class="header-element right relative">
+          <div class="manager-container header-element">
+            <div class="desplegable-header desplegable-gestor">
+              <div class="desplegable-header-cell thumbnail">
+                <div class="thumbnail-circle" style="background-image:url('images/gestores/gestor1-big.png')"></div>
+                <span class="notification-badge hide">0</span> </div>
+              <div class="desplegable-header-cell text">
+                <h2 class="tit-gestor hidden-xs hidden-sm">Tu <span>gestora</span></h2>
+                <p class="txt-gestor hidden-xs hidden-sm">Consúltale</p>
+              </div>
+            </div>
+            <div class="drop-menu">
+              <ul>
+                <li><a href="datos-gestor.html#mis-chats"><i class="icon-chat"></i> Chats</a></li>
+                <li><a href="datos-gestor.html#pedir-cita"><i class="icon-calendario"></i> Pedir cita</a></li>
+                <li><a href="datos-gestor.html#mi-gestor"><i class="icon-usuario"></i> Tu gestor</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="hidden-xs user-container header-element">
+            <div class="desplegable-header desplegable-usuario">
+              <div class="desplegable-header-cell thumbnail">
+                <div class="perfil-usuario" style="background-image:url('images/usuarios/usuario1-big.jpg')"></div>
+              </div>
+              <div class="desplegable-header-cell text">
+                <h2 class="tit-gestor">Hola, <span>Leonardo</span></h2>
+                <p class="txt-gestor"> Particular </p>
+              </div>
+            </div>
+            <div class="drop-menu">
+              <ul>
+                <li> <a href="#"><i class="icon-menu-usuario"></i> Particular</a>
+                  <ul class="submenu">
+                    <li><a href="zona-personal.html#configuracion">Configuración</a></li>
+                    <li><a href="zona-personal.html#buzon">Buzón</a></li>
+                    <li><a href="zona-personal.html#agenda">Agenda</a></li>
+                  </ul>
+                </li>
+                <li> <a href="#"><i class="icon-menu-usuario"></i> Negocio</a>
+                  <ul class="submenu hided-submenu">
+                    <li><a href="#">Configuración</a></li>
+                    <li><a href="#">Buzón</a></li>
+                    <li><a href="#">Agenda</a></li>
+                  </ul>
+                </li>
+                <li> <a href="#"><i class="icon-menu-usuario"></i> EAM</a>
+                  <ul class="submenu hided-submenu">
+                    <li><a href="#">Configuración</a></li>
+                    <li><a href="#">Buzón</a></li>
+                    <li><a href="#">Agenda</a></li>
+                  </ul>
+                </li>
+                <li> <a href="login.html"><i class="icon-off"></i> Cerrar sesión</a> </li>
+                <li class="connection-info"> Últ. acceso 17/09/2015 · 16:35h </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="main-search hidden-xs">
+    <div class="container">
+      <form action="resultados-busqueda.html" method="post">
+        <input type="search" class="input-main-search" autofocus placeholder="¿Qué estas buscando?" />
+        <input type="submit" class="hide" value="Buscar" />
+        <i class="icon-close" id="main-search-closer"></i>
+      </form>
+    </div>
+  </div>
+</div>
+<div id="sb-site" class="wrapper-page-content visibility-hidden  style='margin-bottom: 50px;'">
+  <div class="main-content" id="transfer-operation">
+    <div id="select-portfolio-managed" class="select-portfolio-managed">
+      <select name="security-type-select" id="security-type-select" data-label="Elige un tipo de valor para" tabindex="1" required>
+        <option value="1">FARMACIAS GALENO MERITXELL 91</option>
+        <option value="2">CONTRATO 2</option>
+        <option value="3">CONTRATO 3</option>
+      </select>
+    </div>
+    <div class="operation-title ">
+      <div class="container ">
+        <h1 class="tit-operation ellipsis">Alta Transferencia</h1>
+        <h3 class="tit-operation-detail ellipsis">Transferencias ABA-02</h3>
+        <a class="operation-title-button close-button" href="#"><i class="icon-close"></i></a> </div>
+    </div>
+    <section class="seccion">
+      <div class="container">
+        <form action="grs-alta-recibo-exito.html" method="post" class="form-funnel" id="ff1">
+          <div class="row">
+          <div class="col-md-offset-3 col-md-6">
+          <div class="title-with-info">
+            <h2 class="section-title form-block-title">Datos cliente</h2>
+          </div>
+          <div class="form-funnel-row">
+            <input type="text" placeholder="Referencia cliente / beneficiario" name="answer-1" id="answer-1" tabindex="3" required="" aria-required="true">
+            <i class="icon-info popup-trigger informame"></i> </div>
+          <div class="form-funnel-row">
+            <input type="text" placeholder="IBAN" name="answer-2" id="answer-2" tabindex="3" required="" aria-required="true">
+            <i class="icon-info popup-trigger informame"></i> </div>
+          <h3 class="iban popup-container popup-trigger">No conozco el IBAN</h3>
+          <div class="popup-info list-accounts-popup closeable-container hide">
+            <div class="popup-wrapper"> <i class="icon-close"></i>
+              <p>....</p>
+            </div>
+          </div>
+          <div class="form-funnel-row">
+            <div class="input-fixed-currency">
+              <input type="text" placeholder="Nombre cliente / beneficiario" name="answer-3" id="answer-3" tabindex="3" required="" aria-required="true">
+              <div class="input-mask" style="cursor: pointer;"> <i class="icon-people"></i> </div>
+            </div>
+          </div>
+          <div class="form-funnel-row">
+            <input type="text" placeholder="Nombre del titular (opcional)" name="answer-1" id="answer-1" tabindex="3" required="" aria-required="false">
+          </div>
+          <div class="form-funnel-row">
+            <input type="text" placeholder="Domicilio (opcional)" name="answer-1" id="answer-1" tabindex="3" required="" aria-required="false">
+          </div>
+          <div class="form-funnel-row">
+            <input type="text" placeholder="Localidad (opcional)" name="answer-1" id="answer-1" tabindex="3" required="" aria-required="false">
+          </div>
+          <div class="form-funnel-row">
+            <input type="text" placeholder="Código postal (opcional)" name="answer-1" id="answer-1" tabindex="3" required="" aria-required="false">
+          </div>
+          <div class="form-funnel-row">
+            <div class="select-account">
+              <select name="origin-account" data-label="País beneficiario" tabindex="2" required="" aria-required="true">
+                <option data-alias="Andorra" data-amount="" data-currency="" value="Andorra">Andorra</option>
+                <option data-alias="España" data-amount="" data-currency="" value="España">España</option>
+              </select>
+              <div class="select-container">
+                <div class="select-content">
+                  <div class="account">
+                    <div class="label">Elige una cuenta</div>
+                    <div class="account-alias">Cuenta Hogar</div>
+                  </div>
+                  <div class="amounts">
+                    <div class="amount"><span>5.234,90</span> <span class="currency">EUR</span></div>
+                  </div>
+                </div>
+                <div class="select-dropdown"><i class="icon-down-open-big"></i></div>
+              </div>
+              <div class="select-options-container hide">
+                <div class="select-options-wrapper mCustomScrollbar _mCS_1 mCS_no_scrollbar">
+                  <div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 0px;" tabindex="0">
+                    <div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position: relative; left: 0px; top: 0px;" dir="ltr">
+                      <div class="select-option-row" data-option-index="0">
+                        <div class="select-option-alias">Cuenta Hogar</div>
+                        <div class="select-option-amount">5.234,90 <span class="currency">EUR</span></div>
+                      </div>
+                      <div class="select-option-row" data-option-index="1">
+                        <div class="select-option-alias">Cuenta Ahorro</div>
+                        <div class="select-option-amount">15.124,24 <span class="currency">EUR</span></div>
+                      </div>
+                    </div>
+                    <div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;">
+                      <div class="mCSB_draggerContainer">
+                        <div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;" oncontextmenu="return false;">
+                          <div class="mCSB_dragger_bar" style="line-height: 30px;"></div>
+                        </div>
+                        <div class="mCSB_draggerRail"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="form-funnel-row">
+            <div class="select-account">
+              <select name="origin-account" data-label="País del Banco del beneficiario" tabindex="2" required="" aria-required="true">
+                <option data-alias="Andorra" data-amount="" data-currency="" value="Andorra">Andorra</option>
+                <option data-alias="España" data-amount="" data-currency="" value="España">España</option>
+              </select>
+              <div class="select-container">
+                <div class="select-content">
+                  <div class="account">
+                    <div class="label">Elige una cuenta</div>
+                    <div class="account-alias">Cuenta Hogar</div>
+                  </div>
+                  <div class="amounts">
+                    <div class="amount"><span>5.234,90</span> <span class="currency">EUR</span></div>
+                  </div>
+                </div>
+                <div class="select-dropdown"><i class="icon-down-open-big"></i></div>
+              </div>
+              <div class="select-options-container hide">
+                <div class="select-options-wrapper mCustomScrollbar _mCS_1 mCS_no_scrollbar">
+                  <div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 0px;" tabindex="0">
+                    <div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position: relative; left: 0px; top: 0px;" dir="ltr">
+                      <div class="select-option-row" data-option-index="0">
+                        <div class="select-option-alias">Cuenta Hogar</div>
+                        <div class="select-option-amount">5.234,90 <span class="currency">EUR</span></div>
+                      </div>
+                      <div class="select-option-row" data-option-index="1">
+                        <div class="select-option-alias">Cuenta Ahorro</div>
+                        <div class="select-option-amount">15.124,24 <span class="currency">EUR</span></div>
+                      </div>
+                    </div>
+                    <div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;">
+                      <div class="mCSB_draggerContainer">
+                        <div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;" oncontextmenu="return false;">
+                          <div class="mCSB_dragger_bar" style="line-height: 30px;"></div>
+                        </div>
+                        <div class="mCSB_draggerRail"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <h2 class="section-title">Datos transferencia</h2>
+          
+          <div class="form-funnel-row">
+            <div class="select-account">
+              <select name="origin-account" data-label="Gastos" tabindex="2" required="" aria-required="true">
+                <option data-alias="Gastos por cuenta del ordenante" data-amount="" data-currency="" value="Gastos por cuenta del ordenante">Gastos por cuenta del ordenante</option>
+                <option data-alias="Gastos por cuenta del beneficiario" data-amount="" data-currency="" value="Gastos por cuenta del beneficiario">Gastos por cuenta del beneficiario</option>
+                <option data-alias="Gastos compartidos" data-amount="" data-currency="" value="Gastos compartidos">Gastos compartidos</option>
+              </select>
+              <div class="select-container">
+                <div class="select-content">
+                  <div class="account">
+                    <div class="label">Elige una cuenta</div>
+                    <div class="account-alias">Cuenta Hogar</div>
+                  </div>
+                  <div class="amounts">
+                    <div class="amount"><span>5.234,90</span> <span class="currency">EUR</span></div>
+                  </div>
+                </div>
+                <div class="select-dropdown"><i class="icon-down-open-big"></i></div>
+              </div>
+              <div class="select-options-container hide">
+                <div class="select-options-wrapper mCustomScrollbar _mCS_1 mCS_no_scrollbar">
+                  <div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 0px;" tabindex="0">
+                    <div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position: relative; left: 0px; top: 0px;" dir="ltr">
+                      <div class="select-option-row" data-option-index="0">
+                        <div class="select-option-alias">Cuenta Hogar</div>
+                        <div class="select-option-amount">5.234,90 <span class="currency">EUR</span></div>
+                      </div>
+                      <div class="select-option-row" data-option-index="1">
+                        <div class="select-option-alias">Cuenta Ahorro</div>
+                        <div class="select-option-amount">15.124,24 <span class="currency">EUR</span></div>
+                      </div>
+                    </div>
+                    <div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;">
+                      <div class="mCSB_draggerContainer">
+                        <div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;" oncontextmenu="return false;">
+                          <div class="mCSB_dragger_bar" style="line-height: 30px;"></div>
+                        </div>
+                        <div class="mCSB_draggerRail"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="form-funnel-row">
+            <input type="text" placeholder="Motivo del pago (opcional)" name="answer-1" id="answer-1" tabindex="3" required="" aria-required="false">
+          </div>
+          
+          <div class="form-funnel-row">
+						<div class="input-amount">
+							<div class="input-amount-container">
+								<input type="text" id="input-amount-to-send" name="input-amount-to-send" placeholder="Importe a enviar" data-connected-to="input-origin-amount" tabindex="7" required="" aria-required="true">
+							</div>
+							<div class="select-currency">
+								<select id="currency-amount-dest" name="currency-amount-dest" data-connected-to="currency-amount" data-msg="Divisa errónea" class="disabled-connection" tabindex="8">
+									
+	<option data-flag-img="images/flags/EUR.png" value="EUR">EUR</option>
+
+	<option data-flag-img="images/flags/USD.png" value="USD">USD</option>
+
+	<option data-flag-img="images/flags/AED.png" value="AED">AED</option>
+
+	<option data-flag-img="images/flags/ARS.png" value="ARS">ARS</option>
+
+	<option data-flag-img="images/flags/AUD.png" value="AUD">AUD</option>
+
+	<option data-flag-img="images/flags/BOB.png" value="BOB">BOB</option>
+
+	<option data-flag-img="images/flags/BRL.png" value="BRL">BRL</option>
+
+	<option data-flag-img="images/flags/CAD.png" value="CAD">CAD</option>
+
+	<option data-flag-img="images/flags/CHF.png" value="CHF">CHF</option>
+
+	<option data-flag-img="images/flags/CNY.png" value="CNY">CNY</option>
+
+	<option data-flag-img="images/flags/COP.png" value="COP">COP</option>
+
+	<option data-flag-img="images/flags/CZK.png" value="CZK">CZK</option>
+
+	<option data-flag-img="images/flags/DKK.png" value="DKK">DKK</option>
+
+	<option data-flag-img="images/flags/DZD.png" value="DZD">DZD</option>
+
+	<option data-flag-img="images/flags/ECS.png" value="ECS">ECS</option>
+
+	<option data-flag-img="images/flags/GBP.png" value="GBP">GBP</option>
+
+	<option data-flag-img="images/flags/GIP.png" value="GIP">GIP</option>
+
+	<option data-flag-img="images/flags/HKD.png" value="HKD">HKD</option>
+
+	<option data-flag-img="images/flags/HUF.png" value="HUF">HUF</option>
+
+	<option data-flag-img="images/flags/IDR.png" value="IDR">IDR</option>
+
+	<option data-flag-img="images/flags/ILS.png" value="ILS">ILS</option>
+
+	<option data-flag-img="images/flags/INR.png" value="INR">INR</option>
+
+	<option data-flag-img="images/flags/ISK.png" value="ISK">ISK</option>
+
+	<option data-flag-img="images/flags/JPY.png" value="JPY">JPY</option>
+
+	<option data-flag-img="images/flags/KES.png" value="KES">KES</option>
+
+	<option data-flag-img="images/flags/KWD.png" value="KWD">KWD</option>
+
+	<option data-flag-img="images/flags/LBP.png" value="LBP">LBP</option>
+
+	<option data-flag-img="images/flags/MAD.png" value="MAD">MAD</option>
+
+	<option data-flag-img="images/flags/MXN.png" value="MXN">MXN</option>
+
+	<option data-flag-img="images/flags/MYR.png" value="MYR">MYR</option>
+
+	<option data-flag-img="images/flags/NOK.png" value="NOK">NOK</option>
+
+	<option data-flag-img="images/flags/NZD.png" value="NZD">NZD</option>
+
+	<option data-flag-img="images/flags/PAB.png" value="PAB">PAB</option>
+
+	<option data-flag-img="images/flags/PEN.png" value="PEN">PEN</option>
+
+	<option data-flag-img="images/flags/PLN.png" value="PLN">PLN</option>
+
+	<option data-flag-img="images/flags/ROU.png" value="ROU">ROU</option>
+
+	<option data-flag-img="images/flags/SEK.png" value="SEK">SEK</option>
+
+	<option data-flag-img="images/flags/SGD.png" value="SGD">SGD</option>
+
+	<option data-flag-img="images/flags/TND.png" value="TND">TND</option>
+
+	<option data-flag-img="images/flags/TRY.png" value="TRY">TRY</option>
+
+	<option data-flag-img="images/flags/TWD.png" value="TWD">TWD</option>
+
+	<option data-flag-img="images/flags/UAH.png" value="UAH">UAH</option>
+
+	<option data-flag-img="images/flags/UYP.png" value="UYP">UYP</option>
+
+	<option data-flag-img="images/flags/VEF.png" value="VEF">VEF</option>
+
+	<option data-flag-img="images/flags/XOF.png" value="XOF">XOF</option>
+
+	<option data-flag-img="images/flags/ZAR.png" value="ZAR">ZAR</option>
+
+								</select>
+							<div class="currency-selector select-container clearfix"><div class="currency-flag"><span>EUR</span><img class="flag" src="images/flags/EUR.png"></div><div class="dropdown"><i class="icon-down-open-big"></i></div></div><div class="select-options-container hide"><div class="select-options-wrapper mCustomScrollbar _mCS_7 mCS_no_scrollbar"><div id="mCSB_7" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 0px;" tabindex="0"><div id="mCSB_7_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position: relative; left: 0px; top: 0px;" dir="ltr"><div class="select-option-row " data-option-index="0" data-option-value="EUR"><img class="flag mCS_img_loaded" src="images/flags/EUR.png"><span>EUR</span></div><div class="select-option-row " data-option-index="1" data-option-value="USD"><img class="flag mCS_img_loaded" src="images/flags/USD.png"><span>USD</span></div><div class="select-option-row " data-option-index="2" data-option-value="AED"><img class="flag mCS_img_loaded" src="images/flags/AED.png"><span>AED</span></div><div class="select-option-row " data-option-index="3" data-option-value="ARS"><img class="flag mCS_img_loaded" src="images/flags/ARS.png"><span>ARS</span></div><div class="select-option-row " data-option-index="4" data-option-value="AUD"><img class="flag mCS_img_loaded" src="images/flags/AUD.png"><span>AUD</span></div><div class="select-option-row " data-option-index="5" data-option-value="BOB"><img class="flag mCS_img_loaded" src="images/flags/BOB.png"><span>BOB</span></div><div class="select-option-row " data-option-index="6" data-option-value="BRL"><img class="flag mCS_img_loaded" src="images/flags/BRL.png"><span>BRL</span></div><div class="select-option-row " data-option-index="7" data-option-value="CAD"><img class="flag mCS_img_loaded" src="images/flags/CAD.png"><span>CAD</span></div><div class="select-option-row " data-option-index="8" data-option-value="CHF"><img class="flag mCS_img_loaded" src="images/flags/CHF.png"><span>CHF</span></div><div class="select-option-row " data-option-index="9" data-option-value="CNY"><img class="flag mCS_img_loaded" src="images/flags/CNY.png"><span>CNY</span></div><div class="select-option-row " data-option-index="10" data-option-value="COP"><img class="flag mCS_img_loaded" src="images/flags/COP.png"><span>COP</span></div><div class="select-option-row " data-option-index="11" data-option-value="CZK"><img class="flag mCS_img_loaded" src="images/flags/CZK.png"><span>CZK</span></div><div class="select-option-row " data-option-index="12" data-option-value="DKK"><img class="flag mCS_img_loaded" src="images/flags/DKK.png"><span>DKK</span></div><div class="select-option-row " data-option-index="13" data-option-value="DZD"><img class="flag mCS_img_loaded" src="images/flags/DZD.png"><span>DZD</span></div><div class="select-option-row " data-option-index="14" data-option-value="ECS"><img class="flag mCS_img_loaded" src="images/flags/ECS.png"><span>ECS</span></div><div class="select-option-row " data-option-index="15" data-option-value="GBP"><img class="flag mCS_img_loaded" src="images/flags/GBP.png"><span>GBP</span></div><div class="select-option-row " data-option-index="16" data-option-value="GIP"><img class="flag mCS_img_loaded" src="images/flags/GIP.png"><span>GIP</span></div><div class="select-option-row " data-option-index="17" data-option-value="HKD"><img class="flag mCS_img_loaded" src="images/flags/HKD.png"><span>HKD</span></div><div class="select-option-row " data-option-index="18" data-option-value="HUF"><img class="flag mCS_img_loaded" src="images/flags/HUF.png"><span>HUF</span></div><div class="select-option-row " data-option-index="19" data-option-value="IDR"><img class="flag mCS_img_loaded" src="images/flags/IDR.png"><span>IDR</span></div><div class="select-option-row " data-option-index="20" data-option-value="ILS"><img class="flag mCS_img_loaded" src="images/flags/ILS.png"><span>ILS</span></div><div class="select-option-row " data-option-index="21" data-option-value="INR"><img class="flag mCS_img_loaded" src="images/flags/INR.png"><span>INR</span></div><div class="select-option-row " data-option-index="22" data-option-value="ISK"><img class="flag mCS_img_loaded" src="images/flags/ISK.png"><span>ISK</span></div><div class="select-option-row " data-option-index="23" data-option-value="JPY"><img class="flag mCS_img_loaded" src="images/flags/JPY.png"><span>JPY</span></div><div class="select-option-row " data-option-index="24" data-option-value="KES"><img class="flag mCS_img_loaded" src="images/flags/KES.png"><span>KES</span></div><div class="select-option-row " data-option-index="25" data-option-value="KWD"><img class="flag mCS_img_loaded" src="images/flags/KWD.png"><span>KWD</span></div><div class="select-option-row " data-option-index="26" data-option-value="LBP"><img class="flag mCS_img_loaded" src="images/flags/LBP.png"><span>LBP</span></div><div class="select-option-row " data-option-index="27" data-option-value="MAD"><img class="flag mCS_img_loaded" src="images/flags/MAD.png"><span>MAD</span></div><div class="select-option-row " data-option-index="28" data-option-value="MXN"><img class="flag mCS_img_loaded" src="images/flags/MXN.png"><span>MXN</span></div><div class="select-option-row " data-option-index="29" data-option-value="MYR"><img class="flag mCS_img_loaded" src="images/flags/MYR.png"><span>MYR</span></div><div class="select-option-row " data-option-index="30" data-option-value="NOK"><img class="flag mCS_img_loaded" src="images/flags/NOK.png"><span>NOK</span></div><div class="select-option-row " data-option-index="31" data-option-value="NZD"><img class="flag mCS_img_loaded" src="images/flags/NZD.png"><span>NZD</span></div><div class="select-option-row " data-option-index="32" data-option-value="PAB"><img class="flag mCS_img_loaded" src="images/flags/PAB.png"><span>PAB</span></div><div class="select-option-row " data-option-index="33" data-option-value="PEN"><img class="flag mCS_img_loaded" src="images/flags/PEN.png"><span>PEN</span></div><div class="select-option-row " data-option-index="34" data-option-value="PLN"><img class="flag mCS_img_loaded" src="images/flags/PLN.png"><span>PLN</span></div><div class="select-option-row " data-option-index="35" data-option-value="ROU"><img class="flag mCS_img_loaded" src="images/flags/ROU.png"><span>ROU</span></div><div class="select-option-row " data-option-index="36" data-option-value="SEK"><img class="flag mCS_img_loaded" src="images/flags/SEK.png"><span>SEK</span></div><div class="select-option-row " data-option-index="37" data-option-value="SGD"><img class="flag mCS_img_loaded" src="images/flags/SGD.png"><span>SGD</span></div><div class="select-option-row " data-option-index="38" data-option-value="TND"><img class="flag mCS_img_loaded" src="images/flags/TND.png"><span>TND</span></div><div class="select-option-row " data-option-index="39" data-option-value="TRY"><img class="flag mCS_img_loaded" src="images/flags/TRY.png"><span>TRY</span></div><div class="select-option-row " data-option-index="40" data-option-value="TWD"><img class="flag mCS_img_loaded" src="images/flags/TWD.png"><span>TWD</span></div><div class="select-option-row " data-option-index="41" data-option-value="UAH"><img class="flag mCS_img_loaded" src="images/flags/UAH.png"><span>UAH</span></div><div class="select-option-row " data-option-index="42" data-option-value="UYP"><img class="flag mCS_img_loaded" src="images/flags/UYP.png"><span>UYP</span></div><div class="select-option-row " data-option-index="43" data-option-value="VEF"><img class="flag mCS_img_loaded" src="images/flags/VEF.png"><span>VEF</span></div><div class="select-option-row " data-option-index="44" data-option-value="XOF"><img class="flag mCS_img_loaded" src="images/flags/XOF.png"><span>XOF</span></div><div class="select-option-row " data-option-index="45" data-option-value="ZAR"><img class="flag mCS_img_loaded" src="images/flags/ZAR.png"><span>ZAR</span></div></div><div id="mCSB_7_scrollbar_vertical" class="mCSB_scrollTools mCSB_7_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_7_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div></div></div>
+						</div>
+					</div>
+          
+          
+          <div class="form-funnel-row">
+            <input type="text" placeholder="Concepto" name="answer-1" id="answer-1" tabindex="3" required="" aria-required="false">
+            <img src="images/plus.png" alt="" style="height: 30px; position:absolute; right: -50px; top: 20px; cursor: pointer;" onclick="addConcept();"> </div>
+          <div id="add-concept"></div>
+          <div class="seccion alert-grey warning1" style="padding: 10px; width: 100%;">
+            <div class="" style="padding: 20px;">
+              <table style="width: auto; margin: auto;">
+                <tr>
+                  <td><i class="success-icon icon-aviso" style="font-size: 3em;"></i></td>
+                  <td>¿Deseas aplicar también las modificaciones realizadas sobre el cliente a todos sus documentos asociados?</td>
+                  <td style="width: 60px"><i class="accept icon-check2" onclick="$('#ff1').submit();"></i> <i class="cancel icon-cancel" onclick="$('.warning1').hide(); $('.btn-action').show()"></i></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-offset-4 col-lg-4 col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6">
+              <input type="button" onclick="$('.warning1').show(); $(this).hide()" class="btn-action" value="Continuar">
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </div>
+</div>
+<footer class="footer">
+  <div class="container visible-xs">
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="row-footer-responsive">
+          <h3 class="tit-footer">Atención al cliente <span class="visible-xs"></span></h3>
+          <div class="desplegable-footer">
+            <ul class="listado-footer">
+              <li> <a href="oficinas-y-cajeros.html">Oficinas y cajeros</a> </li>
+              <li> <a href="preguntas-frecuentes.html">Preguntas frecuentes</a> </li>
+              <li> <a href="#">Ayuda urgente</a> </li>
+              <li> <a href="encuesta-de-opinion.html">Encuesta de opinión</a> </li>
+              <li> <a href="buzon-sugerencias.html">Sugerencias</a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="row-footer-responsive">
+          <h3 class="tit-footer">Legal <span class="visible-xs"></span></h3>
+          <div class="desplegable-footer">
+            <ul class="listado-footer">
+              <li> <a href="#">Información legal</a> </li>
+              <li> <a href="#">Tarifas y condiciones</a> </li>
+              <li> <a href="#">Seguridad</a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="contacto-footer">
+          <p class="hidden-xs"> <i class="icon-localizacion hidden-xs"></i> <a href="oficinas-y-cajeros.html">Oficinas y cajeros</a> </p>
+          <p class="hidden-xs"> <i class="icon-faqs hidden-xs"></i> <a href="preguntas-frecuentes.html">Preguntas frecuentes</a> </p>
+          <p class="hidden-xs"> <i class="icon-ayuda hidden-xs"></i> <a href="#">Ayuda urgente</a> </p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <ul class="sociales-footer">
+          <li><a href="#"><i class="icon-facebook"></i></a></li>
+          <li><a href="#"><i class="icon-twitter"></i></a></li>
+          <li><a href="#"><i class="icon-youtube"></i></a></li>
+          <li><a href="#"><i class="icon-instagram"></i></a></li>
+          <li><a href="#"><i class="icon-linkedin-1"></i></a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="subfooter">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 col-md-3 col-lg-4"> <img src="images/logo.png" class="hidden-xs" alt="MoraBanc"> <span class="copyright">&copy; MoraBanc 2016</span> </div>
+        <div class="col-sm-8 col-md-9 col-lg-8 hidden-xs">
+          <ul class="listado-subfooter">
+            <li><a href="encuesta-de-opinion.html">Encuesta de opinión</a></li>
+            <li><a class="bullet-separator" href="buzon-sugerencias.html">Sugerencias</a></li>
+            <li><a href="#">Información legal</a></li>
+            <li><a href="#">Tarifas y condiciones</a></li>
+            <li><a href="#">Seguridad</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="js/vendor.min.js"></script> 
+<script src="js/main.js"></script> 
+<script>
+    var numConcept = 2;
+    
+	function addConcept() {
+    	var html = '<div class="form-funnel-row"><input type="text" placeholder="Concepto" name="answer-'+numConcept+'" id="answer-'+numConcept+'" tabindex="3" required="" aria-required="false"></div>';
+    	
+		$("#add-concept").append(html);
+		
+		numConcept++;
+    }
+  </script> 
+<script type="text/javascript">
+    $(document).ready(function() {
+      FrontMainController.init();
+    });
+  </script> 
+<script>
+    function selectFile() {
+      $("#input-file").click();
+    }
+
+    function fileSelected() {
+      var temp = $("#input-file").val().split("\\");
+      var file = temp.pop();
+      if (file != null && file != '') {
+        $("#choose-file").val(file);
+      }
+    }
+
+    function enviar() {
+      //$("#btn-enviar").hide();
+    }
+  </script>
+</body>
+</html>
