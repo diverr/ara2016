@@ -3,7 +3,7 @@
 <head>
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/grs-custom.css">
-<title>MoraBanc - Importar recibos</title>
+<title>MoraBanc - Importar transferencia</title>
 <meta charset="utf-8">
 <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -181,8 +181,9 @@
   <div class="main-content" id="transfer-operation">
     <div class="operation-title ">
       <div class="container ">
-        <h1 class="tit-operation ellipsis">Importar recibos</h1>
-        <a class="operation-title-button close-button" href="grs-contratos.html"><i class="icon-close"></i></a> </div>
+        <h1 class="tit-operation ellipsis">Importar transferencias</h1>
+        <h3 class="tit-operation-detail ellipsis">Transferencias ABA-02</h3>
+      <a class="operation-title-button close-button" href="grs-contratos.html"><i class="icon-close"></i></a> </div>
     </div>
     <div class="operation-steps">
       <div class="container">
@@ -218,12 +219,18 @@
     </div>
   </div>
 </div>
-<div class="seccion sign-now" style="min-height:1400px;">
-  <form action="grs-envioficheros-seleccion-cuenta.html" method="post" class="form-funnel">
+<div class="seccion " style="min-height:1400px;">
+  <form action="grs-transferencias-importar-seleccion.html" method="post" class="form-funnel">
     <div class="container">
       <div class="row">
         <div class="col-md-offset-2 col-md-8">
-          <div class="list-elements-component no-border-top">
+          
+          
+          
+          
+          
+          
+          <div class="list-elements-component no-border-top sign-now">
             <div class="element-list-row header-list">
               <div class="element-list-summary-container">
                 <div class="element-list-cell text-align-left width-col-2">Importar</div>
@@ -238,10 +245,38 @@
                   <label for="mask-data" class="check only-check"></label>
                 </div>
                 <div class="element-list-cell align-middle text-align-left width-col-8">
+                  <p> Referencia cliente</p>
+                </div>
+                <div class="element-list-cell align-middle text-align-center grey width-col-2"> 
+                  <input name="text1" id="excel1" type="text" placeholder="" tabindex="" required="" class="excel-cuentas" height="20px" aria-required="false">
+                </div>
+              </div>
+            </div>
+            <div class="element-list-row with-details">
+              <div class="element-list-summary-container">
+                <div class="element-list-cell align-middle text-align-center width-col-2 excel"> <span class="element-list-mobile-label visible-xs">Importar</span>
+                  <input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
+                  <label for="mask-data" class="check only-check"></label>
+                </div>
+                <div class="element-list-cell align-middle text-align-left width-col-8">
+                  <p> IBAN</p>
+                </div>
+                <div class="element-list-cell align-middle text-align-center grey width-col-2"> 
+                  <input name="text" id="excel2" type="text2" placeholder="" tabindex="" required="" class="excel-cuentas" height="20px" aria-required="false">
+                </div>
+              </div>
+            </div>
+            <div class="element-list-row with-details">
+              <div class="element-list-summary-container">
+                <div class="element-list-cell align-middle text-align-center width-col-2 excel"> <span class="element-list-mobile-label visible-xs">Importar</span>
+                  <input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
+                  <label for="mask-data" class="check only-check"></label>
+                </div>
+                <div class="element-list-cell align-middle text-align-left width-col-8">
                   <p> Nombre </p>
                 </div>
-                <div class="element-list-cell align-middle text-align-center grey width-col-2"> <span class="element-list-mobile-label">
-                  <input name="text" id="excel" type="text" placeholder="" tabindex="" required="" class="excel-cuentas" height="20px" aria-required="false">
+                <div class="element-list-cell align-middle text-align-center grey width-col-2"> 
+                  <input name="text3" id="excel3" type="text" placeholder="" tabindex="" required="" class="excel-cuentas" height="20px" aria-required="false">
                 </div>
               </div>
             </div>
@@ -254,8 +289,8 @@
                 <div class="element-list-cell align-middle text-align-left width-col-8"><span class="element-list-mobile-label visible-xs">Dato a importar</span>
                   <p> Nombre del titular (opcional) </p>
                 </div>
-                <div class="element-list-cell align-middle text-align-center grey width-col-2"> <span class="element-list-mobile-label">
-                  <input name="text" id="excel" type="text" placeholder="" tabindex="" required="" class="excel-cuentas" height="20px" aria-required="false">
+                <div class="element-list-cell align-middle text-align-center grey width-col-2"> 
+                  <input name="text4" id="excel4" type="text" placeholder="" tabindex="" class="excel-cuentas" height="20px" aria-required="false">
                 </div>
               </div>
             </div>
@@ -266,8 +301,8 @@
                   <label for="mask-data" class="check only-check"></label>
                 </div>
                 <div class="element-list-cell align-middle text-align-left width-col-8"><span class="element-list-mobile-label visible-xs">Dato a importar</span> Domicilio (opcional)</div>
-                <div class="element-list-cell align-middle text-align-center grey width-col-2"> <span class="element-list-mobile-label">
-                  <input name="text" id="excel" type="text" placeholder="" tabindex="" required="" class="excel-cuentas" height="20px" aria-required="false">
+                <div class="element-list-cell align-middle text-align-center grey width-col-2"> 
+                  <input name="text5" id="excel5" type="text" placeholder="" tabindex="" class="excel-cuentas" height="20px" aria-required="false">
                 </div>
               </div>
             </div>
@@ -278,11 +313,130 @@
                   <label for="mask-data" class="check only-check"></label>
                 </div>
                 <div class="element-list-cell align-middle text-align-left width-col-8"><span class="element-list-mobile-label visible-xs">Dato a importar</span> Localidad (opcional)</div>
+                <div class="element-list-cell align-middle text-align-center grey width-col-2"> 
+                  <input name="text6" id="excel6" type="text" placeholder="" tabindex=""  class="excel-cuentas" height="20px" aria-required="false">
+                </div>
+              </div>
+            </div>
+            
+            <div class="element-list-row with-details">
+              <div class="element-list-summary-container">
+                <div class="element-list-cell align-middle text-align-center width-col-2 excel"> <span class="element-list-mobile-label visible-xs">Importar</span>
+                  <input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
+                  <label for="mask-data" class="check only-check"></label>
+                </div>
+                <div class="element-list-cell align-middle text-align-left width-col-8"><span class="element-list-mobile-label visible-xs">Dato a importar</span> Código Postal (opcional)</div>
+                <div class="element-list-cell align-middle text-align-center grey width-col-2"> 
+                  <input name="text7" id="excel7" type="text" placeholder="" tabindex="" class="excel-cuentas" height="20px" aria-required="false">
+                </div>
+              </div>
+            </div>
+            
+            <div class="element-list-row with-details">
+              <div class="element-list-summary-container">
+                <div class="element-list-cell align-middle text-align-center width-col-2 excel"> <span class="element-list-mobile-label visible-xs">Importar</span>
+                  <input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
+                  <label for="mask-data" class="check only-check"></label>
+                </div>
+                <div class="element-list-cell align-middle text-align-left width-col-8"><span class="element-list-mobile-label visible-xs">Dato a importar</span> País</div>
+                <div class="element-list-cell align-middle text-align-center grey width-col-2"> 
+                  <input name="text8" id="excel8" type="text" placeholder="" tabindex="" required="" class="excel-cuentas" height="20px" aria-required="false">
+                </div>
+              </div>
+            </div>
+            
+            <div class="element-list-row with-details">
+              <div class="element-list-summary-container">
+                <div class="element-list-cell align-middle text-align-center width-col-2 excel"> <span class="element-list-mobile-label visible-xs">Importar</span>
+                  <input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
+                  <label for="mask-data" class="check only-check"></label>
+                </div>
+                <div class="element-list-cell align-middle text-align-left width-col-8"><span class="element-list-mobile-label visible-xs">Dato a importar</span> País del Banco del beneficiario (opcional)</div>
+                <div class="element-list-cell align-middle text-align-center grey width-col-2">
+                  <input name="text8" id="excel8" type="text" placeholder="" tabindex="" required="" class="excel-cuentas" height="20px" aria-required="false">
+                </div>
+              </div>
+            </div>
+            
+            <div class="element-list-row with-details">
+              <div class="element-list-summary-container">
+                <div class="element-list-cell align-middle text-align-center width-col-2 excel"> <span class="element-list-mobile-label visible-xs">Importar</span>
+                  <input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
+                  <label for="mask-data" class="check only-check"></label>
+                </div>
+                <div class="element-list-cell align-middle text-align-left width-col-8"><span class="element-list-mobile-label visible-xs">Dato a importar</span> Nombre del Banco del beneficiario</div>
+                <div class="element-list-cell align-middle text-align-center grey width-col-2"> 
+                  <input name="text9" id="excel9" type="text" placeholder="" tabindex="" required="" class="excel-cuentas" height="20px" aria-required="false">
+                </div>
+              </div>
+            </div>
+            
+            <div class="element-list-row with-details">
+              <div class="element-list-summary-container">
+                <div class="element-list-cell align-middle text-align-center width-col-2 excel"> <span class="element-list-mobile-label visible-xs">Importar</span>
+                  <input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
+                  <label for="mask-data" class="check only-check"></label>
+                </div>
+                <div class="element-list-cell align-middle text-align-left width-col-8"><span class="element-list-mobile-label visible-xs">Dato a importar</span> Dirección del Banco del beneficiario</div>
+                <div class="element-list-cell align-middle text-align-center grey width-col-2"> 
+                  <input name="text10" id="excel10" type="text" placeholder="" tabindex="" required="" class="excel-cuentas" height="20px" aria-required="false">
+                </div>
+              </div>
+            </div>
+            
+            <div class="element-list-row with-details">
+              <div class="element-list-summary-container">
+                <div class="element-list-cell align-middle text-align-center width-col-2 excel"> <span class="element-list-mobile-label visible-xs">Importar</span>
+                  <input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
+                  <label for="mask-data" class="check only-check"></label>
+                </div>
+                <div class="element-list-cell align-middle text-align-left width-col-8"><span class="element-list-mobile-label visible-xs">Dato a importar</span> Población del Banco del beneficiario</div>
+                <div class="element-list-cell align-middle text-align-center grey width-col-2"> 
+                  <input name="text11" id="excel11" type="text" placeholder="" tabindex="" required="" class="excel-cuentas" height="20px" aria-required="false">
+                </div>
+              </div>
+            </div>
+            
+            <div class="element-list-row with-details">
+              <div class="element-list-summary-container">
+                <div class="element-list-cell align-middle text-align-center width-col-2 excel"> <span class="element-list-mobile-label visible-xs">Importar</span>
+                  <input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
+                  <label for="mask-data" class="check only-check"></label>
+                </div>
+                <div class="element-list-cell align-middle text-align-left width-col-8"><span class="element-list-mobile-label visible-xs">Dato a importar</span> Código CHIPS (opcional)</div>
                 <div class="element-list-cell align-middle text-align-center grey width-col-2"> <span class="element-list-mobile-label">
                   <input name="text" id="excel" type="text" placeholder="" tabindex="" required="" class="excel-cuentas" height="20px" aria-required="false">
                 </div>
               </div>
             </div>
+            
+            <div class="element-list-row with-details">
+              <div class="element-list-summary-container">
+                <div class="element-list-cell align-middle text-align-center width-col-2 excel"> <span class="element-list-mobile-label visible-xs">Importar</span>
+                  <input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
+                  <label for="mask-data" class="check only-check"></label>
+                </div>
+                <div class="element-list-cell align-middle text-align-left width-col-8"><span class="element-list-mobile-label visible-xs">Dato a importar</span> Nombre del grupo (opcional)</div>
+                <div class="element-list-cell align-middle text-align-center grey width-col-2"> 
+                  <input name="text12" id="excel12" type="text" placeholder="" tabindex="" class="excel-cuentas" height="20px" aria-required="false">
+                </div>
+              </div>
+            </div>
+            
+            <div class="element-list-row with-details">
+              <div class="element-list-summary-container">
+                <div class="element-list-cell align-middle text-align-center width-col-2 excel"> <span class="element-list-mobile-label visible-xs">Importar</span>
+                  <input type="checkbox" id="mask-data" name="mask-data" class="hidden-field">
+                  <label for="mask-data" class="check only-check"></label>
+                </div>
+                <div class="element-list-cell align-middle text-align-left width-col-8"><span class="element-list-mobile-label visible-xs">Dato a importar</span> Importe</div>
+                <div class="element-list-cell align-middle text-align-center grey width-col-2"> 
+                  <input name="text13" id="excel13" type="text" placeholder="" tabindex="" required="" class="excel-cuentas" height="20px" aria-required="false">
+                </div>
+              </div>
+            </div>
+            
+            
             <div class="element-list-row with-details">
               <div class="element-list-summary-container">
                 <div class="element-list-cell align-middle text-align-center width-col-2 excel"> <span class="element-list-mobile-label visible-xs">Importar</span>
@@ -335,14 +489,15 @@
           <input type="submit" class="btn-action" value="Continuar" onclick="enviar();" id="btn-enviar">
         </div>
       </div>
+      
+      <br><br><br><br><br><br><br><br><br><br>
+      
+      
     </div>
   </form>
 </div>
-</div>
-</div>
 
-</div>
-</div>
+
 <footer class="footer">
   <div class="container visible-xs">
     <div class="row">
