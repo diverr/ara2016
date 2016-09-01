@@ -446,8 +446,8 @@
                 <div class="element-list-cell align-middle text-align-left width-col-8"><span class="element-list-mobile-label visible-xs">Dato a importar</span>
                   <p> Concepto 1 </p>
                 </div>
-                <div class="element-list-cell align-middle text-align-center grey width-col-2"> <span class="element-list-mobile-label">
-                  <input name="text" id="excel" type="text" placeholder="" tabindex="" required="" class="excel-cuentas" height="20px" aria-required="false">
+                <div class="element-list-cell align-middle text-align-center grey width-col-2"> 
+                  <input name="text-concepto" id="excel-concepto" type="text" placeholder="" tabindex="" required="" class="excel-cuentas" height="20px" aria-required="false">
                   <img src="images/plus.png" alt="" style="height: 30px; position:absolute; right: -70px; top: 0px; cursor: pointer;" onclick="addLine();">
                 </div>
                 
@@ -463,6 +463,9 @@
           
         </div>
         <div class="col-md-offset-3 col-md-6 popup-container">
+          
+          
+          <div class="sign-now">
           <h2 class="section-title form-block-title">¿Que filas quieres incluir? <i class="icon-info popup-trigger"></i></h2>
           <div class="popup-info list-accounts-popup closeable-container hide">
             <div class="popup-wrapper"> <i class="icon-close"></i>
@@ -476,6 +479,13 @@
             </div>
             <input type="file" class="hidden" id="input-file" name="input-file" onchange="fileSelected()">
           </div>
+          </div>	
+           
+          
+          
+          
+          
+          
           <h2 class="section-title form-block-title">Subir fichero</h2>
           <div class="form-funnel-row securities-option">
             <div class="input-fixed-currency">
