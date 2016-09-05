@@ -135,3 +135,8 @@ div.icon-contratos {
 .error-listado {
   display: none;
 }
+
+.info-account-row {
+  margin-bottom: 0px !important;
+  padding-bottom: 0px;
+}
