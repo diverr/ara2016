@@ -1,0 +1,496 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/grs-custom.css">
+<title>MoraBanc - Emitir fichero</title>
+<meta charset="utf-8">
+<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="MoraBanc">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+</head>
+
+<body>
+<div class="loading-layer loading-spinner-background">
+  <div class="loading-spinner-wrapper">
+    <div class="sk-three-bounce">
+      <div class="sk-child sk-bounce1"></div>
+      <div class="sk-child sk-bounce2"></div>
+      <div class="sk-child sk-bounce3"></div>
+    </div>
+  </div>
+</div>
+<div class="menu-mobile-layer sb-slidebar sb-width-wide sb-left">
+  <div class="inner-mobile-layer">
+    <div class="search-form">
+      <form action="resultados-busqueda.html" method="post">
+        <i class="icon-search"></i>
+        <input type="search" value="" placeholder="Buscar..." class="search-text">
+      </form>
+    </div>
+    <div class="user-mobile-menu" id="perfil-user-mobile">
+      <div class="perfil-usuario" style="background-image:url('images/usuarios/usuario1-small.jpg')"> </div>
+      <h2 class="tit-user text-elipsis">Joan Capdevilla</h2>
+      <p class="last-login">Últ. acceso 27/09/2015 · 16:35h</p>
+      <i class="icon-right-open"></i> </div>
+    <ul class="navigation-mobile">
+      <li> <a href="cuentas.html" title="Cuentas y Tarjetas" class="active"> <span>Cuentas y Tarjetas</span> </a> </li>
+      <li> <a href="#" title="Ahorro" class=""> <span>Ahorro</span> </a> </li>
+      <li> <a href="inversion.html" title="Inversión" class=""> <span>Inversión</span> </a> </li>
+      <li> <a href="#" title="Financiación" class=""> <span>Financiación</span> </a> </li>
+      <li> <a href="#" title="Seguros" class=""> <span>Seguros</span> </a> </li>
+      <li class="visible-xs"> <a href="contratar.html" title="Contratar" class=""> <span>Contratar</span> </a> </li>
+    </ul>
+    <a href="login.html" class="logout-menu-mobile"><i class="icon-off"></i> Cerrar sesión</a>
+    <div class="layer-menu-usuario">
+      <h2 class="tit-user">
+        <div class="perfil-usuario" style="background-image:url('images/usuarios/usuario1-small.jpg')"></div>
+        <span>Joan Capdevilla</span> <i class="icon-close" id="close-layer-menu-usuario"></i> </h2>
+      <ul class="navigation-mobile">
+        <li> <a href="#" title="Contrato empresa"><i class="icon-menu-usuario"></i>Particular</a>
+          <ul class="submenu">
+            <li><a href="zona-personal.html#configuracion">Configuración</a></li>
+            <li><a href="zona-personal.html#buzon">Buzón</a></li>
+            <li><a href="zona-personal.html#agenda">Agenda</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" title="Contrato privado"><i class="icon-menu-usuario"></i>Negocio</a>
+          <ul class="submenu hided-submenu">
+            <li><a href="#">Configuración</a></li>
+            <li><a href="#">Buzón</a></li>
+            <li><a href="#">Agenda</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" title="Contrato privado"><i class="icon-menu-usuario"></i>EAM</a>
+          <ul class="submenu hided-submenu">
+            <li><a href="#">Configuración</a></li>
+            <li><a href="#">Buzón</a></li>
+            <li><a href="#">Agenda</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="wrapper-header-content visibility-hidden sb-slide">
+  <header class="header container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="visible-xs menu-mobile-trigger sb-toggle-left menu-icon-container header-element"> <i class="icon-menu"></i> </div>
+        <div class="logo-container header-element">
+          <h1 class="logo"> <a href="home.html"> <span>MoraBanc</span> <img src="images/logo-mobile.png" alt="MoraBanc" class="visible-xs" /> <img src="images/logo.png" alt="MoraBanc" class="hidden-xs" /> </a> </h1>
+        </div>
+        <nav class="hidden-xs hidden-sm navigation navigation-container header-element">
+          <ul class="navigation-desktop">
+            <li> <a href="cuentas.html" title="Cuentas y Tarjetas" class="active"> <span>Cuentas y Tarjetas</span> </a> </li>
+            <li> <a href="#" title="Ahorro" class=""> <span>Ahorro</span> </a> </li>
+            <li> <a href="inversion.html" title="Inversión" class=""> <span>Inversión</span> </a> </li>
+            <li> <a href="#" title="Financiación" class=""> <span>Financiación</span> </a> </li>
+            <li> <a href="#" title="Seguros" class=""> <span>Seguros</span> </a> </li>
+            <li class="visible-xs"> <a href="contratar.html" title="Contratar" class=""> <span>Contratar</span> </a> </li>
+          </ul>
+        </nav>
+        <div class="visible-sm icon-header-container navigation header-element">
+          <div class="menu-ipad-trigger"> <a href="#"><i class="navigation-icon-menu icon-menu"></i></a> </div>
+          <div class="navigation-ipad">
+            <ul>
+              <li> <a href="cuentas.html" title="Cuentas y Tarjetas" class="active"> <span>Cuentas y Tarjetas</span> </a> </li>
+              <li> <a href="#" title="Ahorro" class=""> <span>Ahorro</span> </a> </li>
+              <li> <a href="inversion.html" title="Inversión" class=""> <span>Inversión</span> </a> </li>
+              <li> <a href="#" title="Financiación" class=""> <span>Financiación</span> </a> </li>
+              <li> <a href="#" title="Seguros" class=""> <span>Seguros</span> </a> </li>
+              <li class="visible-xs"> <a href="contratar.html" title="Contratar" class=""> <span>Contratar</span> </a> </li>
+            </ul>
+          </div>
+        </div>
+        <div class="hidden-xs icon-header-container header-element"> <a href="contratar.html"><i class="navigation-icon-contract icon-contratar"></i></a> </div>
+        <div class="hidden-xs icon-header-container header-element"> <a href="#"><i id="main-search-trigger" class="navigation-icon-search icon-search"></i></a> </div>
+        <div class="header-element right relative">
+          <div class="manager-container header-element">
+            <div class="desplegable-header desplegable-gestor">
+              <div class="desplegable-header-cell thumbnail">
+                <div class="thumbnail-circle" style="background-image:url('images/gestores/gestor1-big.png')"></div>
+                <span class="notification-badge hide">0</span> </div>
+              <div class="desplegable-header-cell text">
+                <h2 class="tit-gestor hidden-xs hidden-sm">Tu <span>gestora</span></h2>
+                <p class="txt-gestor hidden-xs hidden-sm">Consúltale</p>
+              </div>
+            </div>
+            <div class="drop-menu">
+              <ul>
+                <li><a href="datos-gestor.html#mis-chats"><i class="icon-chat"></i> Chats</a></li>
+                <li><a href="datos-gestor.html#pedir-cita"><i class="icon-calendario"></i> Pedir cita</a></li>
+                <li><a href="datos-gestor.html#mi-gestor"><i class="icon-usuario"></i> Tu gestor</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="hidden-xs user-container header-element">
+            <div class="desplegable-header desplegable-usuario">
+              <div class="desplegable-header-cell thumbnail">
+                <div class="perfil-usuario" style="background-image:url('images/usuarios/usuario1-big.jpg')"></div>
+              </div>
+              <div class="desplegable-header-cell text">
+                <h2 class="tit-gestor">Hola, <span>Leonardo</span></h2>
+                <p class="txt-gestor"> Particular </p>
+              </div>
+            </div>
+            <div class="drop-menu">
+              <ul>
+                <li> <a href="#"><i class="icon-menu-usuario"></i> Particular</a>
+                  <ul class="submenu">
+                    <li><a href="zona-personal.html#configuracion">Configuración</a></li>
+                    <li><a href="zona-personal.html#buzon">Buzón</a></li>
+                    <li><a href="zona-personal.html#agenda">Agenda</a></li>
+                  </ul>
+                </li>
+                <li> <a href="#"><i class="icon-menu-usuario"></i> Negocio</a>
+                  <ul class="submenu hided-submenu">
+                    <li><a href="#">Configuración</a></li>
+                    <li><a href="#">Buzón</a></li>
+                    <li><a href="#">Agenda</a></li>
+                  </ul>
+                </li>
+                <li> <a href="#"><i class="icon-menu-usuario"></i> EAM</a>
+                  <ul class="submenu hided-submenu">
+                    <li><a href="#">Configuración</a></li>
+                    <li><a href="#">Buzón</a></li>
+                    <li><a href="#">Agenda</a></li>
+                  </ul>
+                </li>
+                <li> <a href="login.html"><i class="icon-off"></i> Cerrar sesión</a> </li>
+                <li class="connection-info"> Últ. acceso 17/09/2015 · 16:35h </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="main-search hidden-xs">
+    <div class="container">
+      <form action="resultados-busqueda.html" method="post">
+        <input type="search" class="input-main-search" autofocus placeholder="¿Qué estas buscando?" />
+        <input type="submit" class="hide" value="Buscar" />
+        <i class="icon-close" id="main-search-closer"></i>
+      </form>
+    </div>
+  </div>
+</div>
+<div id="sb-site" class="wrapper-page-content visibility-hidden  style='margin-bottom: 50px;'">
+  <div class="main-content" id="transfer-operation">
+    <div id="select-portfolio-managed" class="select-portfolio-managed">
+      <select name="security-type-select" id="security-type-select" data-label="Elige un tipo de valor para" tabindex="1" required>
+        <option value="1">FARMACIAS GALENO MERITXELL 91</option>
+        <option value="2">CONTRATO 2</option>
+        <option value="3">CONTRATO 3</option>
+      </select>
+    </div>
+    <div class="operation-title ">
+      <div class="container ">
+        <h1 class="tit-operation ellipsis">Emitir fichero</h1>
+        <a class="operation-title-button close-button" href="javascript:history.back();"><i class="icon-close"></i></a> </div>
+    </div>
+    <div class="operation-steps">
+      <div class="container">
+        <ol class="list-steps">
+          <li><a class="selected bar-selected"> Inicio </a></li>
+          <li><a class="selected bar-selected"> ¿Correcto? </a></li>
+          <li><a> ¡Hecho! </a></li>
+        </ol>
+      </div>
+    </div>
+    
+    
+    <div class="seccion seccion-colored">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-offset-1 col-md-4 col-sm-6">
+				<div class="operation-summary-info">
+					<div class="info-title">Datos ordenante</div>
+					
+                    
+                    <div class="info-account">
+						<div class="account">
+							<div class="account-alias">Cuenta Hogar</div>
+							<div class="account-iban">ES55 1234 5678 3198 4232 8764</div>
+						</div>
+						<div class="account-amount">5.234,89 <span>EUR</span></div>
+					</div>
+                    
+                    
+                    <div class="info-account">
+						<div class="account">
+							<div class="account-alias">Número de empresa:</div>
+						</div>
+						<div class="account-amount">24501</div>
+					</div>
+                    
+                    
+                    <div class="info-account">
+						<div class="account">
+							<div class="account-alias">Nombre del ordenante:</div>
+						</div>
+						<div class="account-amount">JOAN MARTI PUIG</div>
+					</div>
+                    
+                    
+				</div>
+			</div>
+			<div class="col-md-offset-2 col-md-4 col-sm-6">
+				<div class="operation-summary-info">
+					<div class="info-title">Datos fichero</div>
+                    
+                    <div class="info-account">
+						<div class="account">
+							<div class="account-alias">Descripción:</div>
+						</div>
+						<div class="account-amount">Transferencias mes de abril</div>
+					</div>
+                    
+					<div class="info-account">
+						<div class="account">
+							<div class="account-alias">Concepto:</div>
+						</div>
+						<div class="account-amount">Transferencia a Farmacia G.M.91</div>
+					</div>
+                    
+                    
+                    <div class="info-account">
+						<div class="account">
+							<div class="account-alias">Número de pagos:</div>
+						</div>
+						<div class="account-amount">3</div>
+					</div>
+                    
+                    
+					<div class="info-account">
+						<div class="account">
+							<div class="account-alias">Importe Total del fichero:</div>
+						</div>
+						<div class="account-amount">116,59 <span>EuR</span></div>
+					</div>
+                    
+                    <div class="info-account">
+						<div class="account">
+							<div class="account-alias">Fecha de valor:</div>
+						</div>
+						<div class="account-amount">1/05/2016</div>
+					</div>
+                    
+				</div>
+			</div>
+			
+		</div>
+        <div class="col-md-offset-1 col-md-10 col-sm-12">
+				<div class="operation-summary-info with-border-top row">
+					<div class="info-value col-md-4">
+						Comisiones: <span class="amount-currency">0,00 <span>EUR</span></span>
+					</div>
+					<div class="info-value col-md-4 align-center">
+						IGI: <span class="amount-currency">0,00 <span>EUR</span></span>
+					</div>
+					<div class="info-value col-md-4 align-right">
+						Importe total: <span class="amount-currency">21,00 <span>EUR</span></span>
+					</div>
+				</div>
+			</div>
+	</div>
+</div>
+
+
+<div class="seccion operation-keys">
+	<div class="container">
+		<form action="transferencia-confirmacion.html" method="post" class="form-funnel confirmation-key confirmation-key-no-hide" novalidate="novalidate">
+			<div class="row">
+				<div class="col-md-offset-3 col-md-6">
+					
+					<div class="form-funnel-row">
+						<ul class="buttons-option-list" id="new-sign-now">
+							<div class="col-xs-6 less-padding">
+								<li id="sign-now">
+									<span class="selected">Firmar ahora</span>
+									<input type="radio" name="new-sign-now" value="sign-now" checked="checked" tabindex="1" required="" aria-required="true">
+								</li>
+							</div>
+							<div class="col-xs-6 less-padding">
+								<li id="defer-signature">
+									<span class="">Diferir la firma</span>
+									<input type="radio" name="new-sign-now" value="defer-signature" tabindex="2">
+								</li>
+							</div>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-offset-3 col-md-6">
+					<div class="form-funnel-row sign-now">
+						<div id="operation-summary-step-1">
+	<h2 class="section-title form-block-title">Introduce tu clave</h2>
+	<div class="form-funnel-row">
+		<input type="password" name="input-password" id="input-password" pattern=".{6}" title="La clave tiene que tener exactamente 6 caracteres." tabindex="1" required="" aria-required="true">
+	</div>
+</div>
+
+<div id="operation-summary-step-2" class="hide">
+	<h2 class="section-title form-block-title">Clave de autorización</h2>
+	<p class="txt-operation-summary">Por tu seguridad, se te solicitará un código de autentificación para completar la firma de la operación. Selecciona el canal por el que deseas recibirla:</p>
+	<div class="form-funnel-row">
+		<ul class="buttons-option-list" id="key-delivery-type">
+			<div class="col-xs-6 less-padding">
+				<li id="email-delivery-key">
+					<span>E-mail a j*******il.com</span>
+					<input type="radio" name="key-delivery-type" value="email-delivery-key" tabindex="2" required="" aria-required="true">
+				</li>
+			</div>
+			<div class="col-xs-6 less-padding">
+				<li id="mobile-delivery-key">
+					<span>SMS al móvil 6******23</span>
+					<input type="radio" name="key-delivery-type" value="mobile-delivery-key">
+				</li>
+			</div>
+		</ul>
+	</div>
+</div>
+
+<div id="operation-summary-step-3" class="mobile-delivery-key email-delivery-key hide">
+	<div class="form-funnel-row">
+		<input type="password" placeholder="Introduce el código que has recibido." name="confirmation-key-password" id="confirmation-key-password" minlength="5" maxlength="16" tabindex="3" class="login-password" required="" aria-required="true">
+		<p class="forgotten-password">
+			<span class="hide">Se te ha enviado el código de nuevo.<br></span><span>¿No lo has recibido? </span><span class="hide"><br></span><a href="#">Reenviar el código</a>. 
+		</p>
+	</div>
+</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-6">
+							<a href="grs-transferencias-emision-ficheros.html" class="btn-outline">Volver</a>
+						</div>
+						<div class="col-md-6">
+							<a class="btn-action sign-now" id="continue">Continuar</a>
+							<input type="submit" class="btn-action hide" value="Confirmar" style="display: inline-block;">
+							<a href="grs-transferencias-emision-ficheros-confirmacion.html" class="btn-action defer-signature hide">Continuar</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+    
+    
+    
+    
+   
+    
+  </div>
+</div>
+<footer class="footer">
+  <div class="container visible-xs">
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="row-footer-responsive">
+          <h3 class="tit-footer">Atención al cliente <span class="visible-xs"></span></h3>
+          <div class="desplegable-footer">
+            <ul class="listado-footer">
+              <li> <a href="oficinas-y-cajeros.html">Oficinas y cajeros</a> </li>
+              <li> <a href="preguntas-frecuentes.html">Preguntas frecuentes</a> </li>
+              <li> <a href="#">Ayuda urgente</a> </li>
+              <li> <a href="encuesta-de-opinion.html">Encuesta de opinión</a> </li>
+              <li> <a href="buzon-sugerencias.html">Sugerencias</a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="row-footer-responsive">
+          <h3 class="tit-footer">Legal <span class="visible-xs"></span></h3>
+          <div class="desplegable-footer">
+            <ul class="listado-footer">
+              <li> <a href="#">Información legal</a> </li>
+              <li> <a href="#">Tarifas y condiciones</a> </li>
+              <li> <a href="#">Seguridad</a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="contacto-footer">
+          <p class="hidden-xs"> <i class="icon-localizacion hidden-xs"></i> <a href="oficinas-y-cajeros.html">Oficinas y cajeros</a> </p>
+          <p class="hidden-xs"> <i class="icon-faqs hidden-xs"></i> <a href="preguntas-frecuentes.html">Preguntas frecuentes</a> </p>
+          <p class="hidden-xs"> <i class="icon-ayuda hidden-xs"></i> <a href="#">Ayuda urgente</a> </p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <ul class="sociales-footer">
+          <li><a href="#"><i class="icon-facebook"></i></a></li>
+          <li><a href="#"><i class="icon-twitter"></i></a></li>
+          <li><a href="#"><i class="icon-youtube"></i></a></li>
+          <li><a href="#"><i class="icon-instagram"></i></a></li>
+          <li><a href="#"><i class="icon-linkedin-1"></i></a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="subfooter">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 col-md-3 col-lg-4"> <img src="images/logo.png" class="hidden-xs" alt="MoraBanc"> <span class="copyright">&copy; MoraBanc 2016</span> </div>
+        <div class="col-sm-8 col-md-9 col-lg-8 hidden-xs">
+          <ul class="listado-subfooter">
+            <li><a href="encuesta-de-opinion.html">Encuesta de opinión</a></li>
+            <li><a class="bullet-separator" href="buzon-sugerencias.html">Sugerencias</a></li>
+            <li><a href="#">Información legal</a></li>
+            <li><a href="#">Tarifas y condiciones</a></li>
+            <li><a href="#">Seguridad</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="js/vendor.min.js"></script> 
+<script src="js/main.js"></script> 
+<script>
+    var numConcept = 2;
+    
+	function addConcept() {
+    	var html = '<div class="form-funnel-row"><input type="text" placeholder="Concepto" name="answer-'+numConcept+'" id="answer-'+numConcept+'" tabindex="3" required="" aria-required="false"></div>';
+    	
+		$("#add-concept").append(html);
+		
+		numConcept++;
+    }
+  </script> 
+<script type="text/javascript">
+    $(document).ready(function() {
+      FrontMainController.init();
+    });
+  </script> 
+<script>
+    function selectFile() {
+      $("#input-file").click();
+    }
+
+    function fileSelected() {
+      var temp = $("#input-file").val().split("\\");
+      var file = temp.pop();
+      if (file != null && file != '') {
+        $("#choose-file").val(file);
+      }
+    }
+
+    function enviar() {
+      //$("#btn-enviar").hide();
+    }
+  </script>
+</body>
+</html>
